@@ -19,7 +19,7 @@ $color-white:{#FFFFFF;
 	margin-top:20px;
 	margin-left:30px;
 	margin-right:50px;
-	margin-bottom:50px;
+	margin-bottom:30px;
 	clear:both;
 	float:left;
 	position:fixed;
@@ -33,7 +33,7 @@ $color-white:{#FFFFFF;
 }
 
 .nav_menu li{
-	@include nav-links-style;
+	@include unordered-links-style;
 	margin-left:30px;
 	padding:10px;
 	font-size:1.1em;
