@@ -12,7 +12,7 @@ $color-white:{#FFFFFF;
 	margin:30px 30px 30px 30px
 }
 
-@mixin nav-links-style {
+@mixin unordered-links-style {
 	list-style-type:none;
 	display:inline; 
 	color:$color-white; 
@@ -29,7 +29,7 @@ $color-white:{#FFFFFF;
 }
 
 .nav_menu{
-	@include nav-links-style
+	@include unordered-links-style
 }
 
 .nav_menu li{
