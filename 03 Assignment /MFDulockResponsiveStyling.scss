@@ -2,15 +2,22 @@ body{
 background-image:url(images/black-Linen_@2X.png);
 font-family:'Open Sans', sans-serif}
 
-$color-white:#FFFFFF;
+$color-white:{#FFFFFF;
+}
 
+#logo {
+	width:300px;
+	height:300px;
+	/*opacity:.8;*/
+	margin:30px 30px 30px 30px
+}
 
-@mixin nav-links-style{
+@mixin nav-links-style {
 	list-style-type:none;
 	display:inline; 
 	color:$color-white; 
 	margin-top:20px;
-	margin-left:20px;
+	margin-left:30px;
 	margin-right:50px;
 	margin-bottom:50px;
 	clear:both;
@@ -27,6 +34,7 @@ $color-white:#FFFFFF;
 
 .nav_menu li{
 	@include nav-links-style;
+	margin-left:30px;
 	padding:10px;
 	font-size:1.1em;
 
@@ -116,22 +124,23 @@ h1{color:#FFFFFF}
 h2{font-weight:bold; 
 	font-size:1.5em; 
 	line-height:1.5em;
-	text-align:center;
+	text-align:left;
 	color:#70110d;
-	padding:0px 5px 5px 5px;
+	padding:0px 5px 0px 5px;
 	-webkit-transition:color .6s ease;
 	-moz-transition:color .6s ease;
 	-o-transition:color .6s ease;
 	-transition:color .6s ease;}
 	
-}
+	h3{text-align:right}
 
-a:link{
+a:link {
 	color:#FFFFFF; text-decoration:none;
 	-webkit-transition:all .6s ease;
 	-moz-transition:all .6s ease;
 	-o-transition:all .6s ease;
 	transition:all .6s ease;
+
 	}
 
 a:visited{
@@ -169,7 +178,7 @@ article{color:red}
 	height:80px;
 	clear:both;
 	float:right;
-	position:relative;
+	position:absolute;
 	margin:10px 10px 10px 10px;
 	padding:5px 5px 5px 5px;}
 
