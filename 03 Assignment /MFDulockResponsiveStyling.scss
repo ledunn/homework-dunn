@@ -1,3 +1,14 @@
+
+/*BACKGROUND PROPERTY
+
+LOGO ID, MEDIA QUERIES UNRESPONSIVE
+
+HOVER LINK ERROR?
+*/
+
+
+
+
 /*media query and screen size variables*/
 
 $small: 500px;
@@ -8,15 +19,14 @@ $large: 3000px;
 
 /*color and styling variables*/
 
-$default_color: #FFFFFF
+$default_color: #FFFFFF;
 
 body{
-  	background-image: url("images/black-Linen_@2X.png");
-  	width: 100%;
-  	height: 100%;
-  	font-family:('Open Sans', sans-serif)
-
-}
+//  	background-image: url("images/black-Linen_2X.png");
+//  	width: 100%;
+//  	height: 100%;
+  	font-family:'Open Sans', sans-serif;
+	background-color:#000000}
 
 
 
@@ -125,32 +135,32 @@ body{
 	transform:translateX(-3px) .6s ease;}
 
 .BlogMainText:hover{
-@include box-shadow-styling	
+@include box-shadow-styling;
 }
 
-@mixin grow-and-rotate {	
-	-webkit-transform:scale(1.5) rotate:(-10deg);
+@mixin grow_and_rotate {
+	-webkit-transform:scale(1.5) rotate(-10deg);
 	-moz-transform:scale(1.5) rotate(-10deg);
 	-o-transform:scale(1.5) rotate(-10deg);
-	transform:scale(1.5) rotate(-10deg); }
+	transform:scale(1.5) rotate(-10deg);}
 
 .social_media li{
-  	background-color:red;
-	@include grow-and-rotate;
+//  	background-color:red;
+//	@include grow_and_rotate;
 	list-style-type:none;
-	display:inline;
-	float:left;
-	position:absolute;
-  	overflow:auto;
-	margin-top:500px;
-  	margin-left:30px;
-	margin-right:40px;
-	padding:15px 15px 15px 15px;
-
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
+//	display:inline;
+//	float:left;
+//	position:absolute;
+//  	overflow:auto;
+//	margin-top:500px;
+//  	margin-left:30px;
+//	margin-right:40px;
+//	padding:15px 15px 15px 15px;
+//
+//	-webkit-transition: all .5s ease;
+//	-moz-transition: all .5s ease;
+//	-o-transition: all .5s ease;
+//	transition: all .5s ease;
 }	
 
 article{
@@ -237,10 +247,12 @@ a:visited{
 }
 
 a:hover{
-	-webkit-transition: color:#D17634;
-  	-moz-transition: color:#D17634;
-	-o-transition: color:#D17634;
-	color:#D17634;
+
+	-webkit-transition: color .6s ease;
+  	-moz-transition: color .6s ease;
+	-o-transition: color .6s ease;
+	transition: color .6s ease;
+  	color:#D17634;
 }
 
 a:active{
