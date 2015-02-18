@@ -1,21 +1,52 @@
+/*media query and screen size variables*/
+
+$small: 500px;
+
+$medium: 1540px;
+
+$large: 3000px;
+
+/*color and styling variables*/
+
+$default_color: #FFFFFF
+
 body{
-background-image:url(images/black-Linen_@2X.png);
-font-family:'Open Sans', sans-serif}
+  	background-image: url("images/black-Linen_@2X.png");
+  	width: 100%;
+  	height: 100%;
+  	font-family:('Open Sans', sans-serif)
 
-$color-white:{#FFFFFF;
 }
 
-#logo {
-	width:300px;
-	height:300px;
+
+
+
+#logo{
+	width:200px;
+  	height:200px;
+
+  	@media screen and (max-width:$small) {
+	width:100px;
+	height:100px;
 	/*opacity:.8;*/
-	margin:30px 30px 30px 30px
+	margin:30px 30px 30px 30px}
+
+	@media screen and (max-width:$medium) {
+	  width:250px;
+	  height:250px;
+	}
+
+	@media screen and (max-width:$large) {
+	  width:300px;
+	  height:300px;
+	}
 }
 
-@mixin unordered-links-style {
+
+.nav_menu{
 	list-style-type:none;
 	display:inline; 
-	color:$color-white; 
+	color:red;
 	margin-top:20px;
 	margin-left:30px;
 	margin-right:50px;
@@ -23,38 +54,65 @@ $color-white:{#FFFFFF;
 	clear:both;
 	float:left;
 	position:fixed;
-	padding:15px 15px 15px 15px;
+	padding:20px 20px 20px 20px;
 	text-align:left;
-	line-height:1.3em; 
+	line-height:1.3em;
+  	overflow:auto;
 }
 
-.nav_menu{
-	@include unordered-links-style
-}
+
 
 .nav_menu li{
-	@include unordered-links-style;
-	margin-left:30px;
 	padding:10px;
-	font-size:1.1em;
+	font-size:2em;
+  	line-height:1.6em;
 
-}
+  	@media screen and (max-width: $small) {
+	  font-size:.8em;
+	  color:red; /*CHANGE THIS LATER, FONT COLOR ADDED TO MEDIA QUERY TO TEST IF IT IS WORKING*/
+	}
 
-@mixin Blog-Main-Text{
+  	@media screen and (max-width:$medium){
+	  font-size:1em
+	}
+
+  	@media screen and (max-width:$large) {
+	  font-size:1.1em
+	}
+	}
+.BlogMainText{
 	width:50%;
 	height:50%;
 	margin-top:20px;
 	margin-left:500px;
-	margin-right:0px;
+	margin-right:100px;
 	margin-bottom:20px; 
 	clear:both;
 	position:relative;
+  	float:right;
 	background-color:#b6a399;
-	box-shadow:none}
+	box-shadow:none;
+	overflow:auto;}
 
-.BlogMainText{
-	@include Blog-Main-Text
-}
+	@media screen and (max-width:$small) {
+	  width:80%;
+	  height: 50%;
+	  color:red;
+	}
+
+
+
+
+.BlogArticleImage{
+  width:30%;
+  height:25%;
+  clear:both;
+  float:right;
+  position:relative;
+  overflow:auto;
+  margin:10px 10px 10px 20px;
+  padding:15px 15px 15px 15px;}
+
 
 @mixin box-shadow-styling {box-shadow:
 		1px 1px 1px #1c0a06,
@@ -76,13 +134,16 @@ $color-white:{#FFFFFF;
 	-o-transform:scale(1.5) rotate(-10deg);
 	transform:scale(1.5) rotate(-10deg); }
 
-.social_media {
+.social_media li{
+  	background-color:red;
 	@include grow-and-rotate;
 	list-style-type:none;
 	display:inline;
 	float:left;
 	position:absolute;
-	margin-top:90%;
+  	overflow:auto;
+	margin-top:500px;
+  	margin-left:30px;
 	margin-right:40px;
 	padding:15px 15px 15px 15px;
 
@@ -90,22 +151,20 @@ $color-white:{#FFFFFF;
 	-moz-transition: all .5s ease;
 	-o-transition: all .5s ease;
 	transition: all .5s ease;
-
-	&li:{float:left;
-	padding:5px 5px 5px 5px;}
 }	
 
 article{
 	clear:both;
-	float:right;
+	float:left;
 	background-color:#b6a399; 
 	opacity:.8;
 	font-size:.9em;
+  	color:#000000;
 	text-align:left;
 	line-height:1.5em;
 	width:75%;
 	height:50%;
-	margin:left:500px;
+	margin-left:0px;
 	padding-left:30px;
 	padding-right: 30px;
 	padding-top:5px;
@@ -114,14 +173,15 @@ article{
 }
 
 h1{
-	color:$color:white;
+	color:$default_color;
 	font-size:3em; 
 	margin-left:25%;
 	padding:20px}
 
-h1{color:#FFFFFF}
+h1{color:$default_color}
 
-h2{font-weight:bold; 
+h2{
+  	font-weight:bold;
 	font-size:1.5em; 
 	line-height:1.5em;
 	text-align:left;
@@ -130,12 +190,40 @@ h2{font-weight:bold;
 	-webkit-transition:color .6s ease;
 	-moz-transition:color .6s ease;
 	-o-transition:color .6s ease;
-	-transition:color .6s ease;}
+	-transition:color .6s ease;
+
+	@media screen and (max-width:$small){
+	  font-size:.8em;
+	  line-height:1.1em;
+	}
+
+  	@media screen and (max-width:$medium){
+	  font-size:1em;
+	  line-height:1.2em;
+	}
+}
 	
-	h3{text-align:right}
+h3{
+  text-align:right;
+  color:#000000;
+
+  @media screen and (max-width:$small){
+	font-size:.6em;
+
+  }
+
+  @media screen and (max-width:$medium){
+	font-size:.8em;
+
+  }
+
+
+}
+
 
 a:link {
-	color:#FFFFFF; text-decoration:none;
+	color:$default_color;
+  	text-decoration:none;
 	-webkit-transition:all .6s ease;
 	-moz-transition:all .6s ease;
 	-o-transition:all .6s ease;
@@ -149,15 +237,17 @@ a:visited{
 }
 
 a:hover{
-	webkit-transition: color:#D17634;
-	-moz-transition:color:#D17634;
-	-o-transition:color:#D17634;
+	-webkit-transition: color:#D17634;
+  	-moz-transition: color:#D17634;
+	-o-transition: color:#D17634;
 	color:#D17634;
 }
 
 a:active{
 	color:#D17634;
 }
+
+
 
 .selected_link{ text-decoration:none;
 	color: #000000;
@@ -166,37 +256,4 @@ a:active{
 
 
 
-@media screen and (max-width:500px) {
 
-font-size:.8em;
-color:red;
-article{color:red}
-.BlogMainText{width:300px;height:500px;}
-
-.BlogArticleImage{
-	width:100px;
-	height:80px;
-	clear:both;
-	float:right;
-	position:absolute;
-	margin:10px 10px 10px 10px;
-	padding:5px 5px 5px 5px;}
-
-#logo{
-width:80px;
-height:80px;
-}	
-
-}
-
-
-@media screen and (max-width:2050px){
-font-size:1em;
-.BlogArticleImage{
-	width:150px;
-	height:120px;
-	clear:both;
-	float:right;
-	position:relative;
-	margin:10px 10px 10px 10px;
-	padding:5px 5px 5px 5px;} }

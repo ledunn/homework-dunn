@@ -1,0 +1,41 @@
+/*
+Error: Invalid CSS after "body": expected selector or at-rule, was "{"
+        on line 13 of MFDulockResponsiveStyling.scss
+
+8: 
+9: /*color and styling variables*\/
+10: 
+11: $default_color:'#FFFFFF'
+12: 
+13: body{
+14:   	background-image: url("images/black-Linen_@2X.png");
+15:   	width: 100%;
+16:   	height: 100%;
+17:   	font-family:('Open Sans', sans-serif)
+18: 
+
+Backtrace:
+MFDulockResponsiveStyling.scss:13
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:1165:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:1101:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/bin/scss:13:in `<top (required)>'
+/usr/bin/scss:23:in `load'
+/usr/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"body\": expected selector or at-rule, was \"{\"\A         on line 13 of MFDulockResponsiveStyling.scss\A \A 8: \A 9: /*color and styling variables*/\A 10: \A 11: $default_color:'#FFFFFF'\A 12: \A 13: body{\A 14:   	background-image: url(\"images/black-Linen_@2X.png\");\A 15:   	width: 100%;\A 16:   	height: 100%;\A 17:   	font-family:('Open Sans', sans-serif)\A 18: "; }
