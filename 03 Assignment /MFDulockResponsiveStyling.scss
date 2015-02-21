@@ -1,21 +1,11 @@
 
-/*BACKGROUND PROPERTY
-
-LOGO ID, MEDIA QUERIES UNRESPONSIVE
-
-HOVER LINK ERROR?
-*/
-
-
-
-
 /*media query and screen size variables*/
 
-$small: 500px;
+$small: 800px;
 
-$medium: 1540px;
+$medium: 1350px;
 
-$large: 3000px;
+$large: 2050px;
 
 /*color and styling variables*/
 
@@ -27,31 +17,33 @@ body{
 
 //  	width: 100%;
 // 		height: 100%;
-  	font-family:'Open Sans', sans-serif;
+  	font-family:'Open Sans', sans-serif, 'Josefin Slab', serif;
 //	background-color:#000000}
 
 
 
 
 #logo{
-	width:200px;
-  	height:200px;
+	width:150px;
+  	height:150px;
   	opacity:.7;
 
   	@media screen and (max-width:$small) {
-	width:100px;
-	height:100px;
-	/*opacity:.8;*/
-	margin:30px 30px 30px 30px}
+	width:30px;
+	height:30px;
+	opacity:.7;
+	margin:20px 20px 20px 20px}
 
 	@media screen and (max-width:$medium) {
-	  width:250px;
-	  height:250px;
+	  width:100px;
+	  height:100px;
+	  opacity:.7;
 	}
 
 	@media screen and (max-width:$large) {
-	  width:300px;
-	  height:300px;
+	  width:150px;
+	  height:150px;
+	  opacity:.7;
 	}
 }
 
@@ -94,11 +86,11 @@ body{
 	}
 	}
 .BlogMainText{
-	width:50%;
+	width:70%;
 	height:50%;
-	margin-top:20px;
+	margin-top:50px;
 	margin-left:30%;
-	margin-right:100px;
+	margin-right:50px;
 	margin-bottom:20px; 
 	clear:both;
 	position:relative;
@@ -117,14 +109,14 @@ body{
 
 
 .BlogArticleImage{
-  width:30%;
-  height:25%;
+  width:60%;
+  height:40%;
   clear:both;
   float:right;
   position:relative;
   overflow:auto;
-  margin:10px 10px 10px 20px;
-  padding:15px 15px 15px 15px;}
+  margin:0px 0px 0px 0px;
+  padding:5px 5px 5px 5px;}
 
 
 @mixin box-shadow-styling {box-shadow:
@@ -147,28 +139,38 @@ body{
 	-o-transform:scale(1.5) rotate(-10deg);
 	transform:scale(1.5) rotate(-10deg);}
 
-.social_media li{
-  	width:20px;
-  	height:20px;
+
+.social_media {
+  li {
+	width: 30px;
+	height: 30px;
+	list-style-type: none;
+	display: inline;
+	float: left;
+	//		position:absolute;
+	overflow: auto;
+	//		margin-top:500px;
+	//  	margin-left:30px;
+	//		margin-right:40px;
+	padding: 5px 5px 5px 5px;
+
+
+  		}
+  li.hover{
 	@include grow_and_rotate;
-	list-style-type:none;
-	display:inline;
-	float:left;
-//	position:absolute;
-	overflow:auto;
-//	margin-top:500px;
-//  margin-left:30px;
-//	margin-right:40px;
-	padding:15px 15px 15px 15px;
-//
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
-}	
+//	-webkit-transition: all .5s;
+//	-moz-transition: all .5s ease;
+//	-o-transition: all .5s ease;
+//	transition: all .5s ease;
+  }
+  img {
+	width:25px;
+	height:25px;
+  }
+	}
 
 article{
-	clear:both;
+
 	float:left;
 	background-color:#b6a399; 
 	opacity:.8;
@@ -176,35 +178,49 @@ article{
   	color:#000000;
 	text-align:left;
 	line-height:1.5em;
-	width:75%;
-	height:50%;
-	margin-left:0px;
-	padding-left:30px;
-	padding-right: 30px;
-	padding-top:5px;
-	padding-bottom: 5px;
+	width:80%;
+	height:80%;
+	margin-left:40px;
+  	padding: 10px 10px 10px 10px;
+//	padding-left:30px;
+//	padding-right: 30px;
+//	padding-top:5px;
+//	padding-bottom: 5px;
 	
+}
+
+p{
+  margin-top:10px;
+  padding-top:25px;
+//  text-align:left;
+
 }
 
 h1{
 	color:$default_color;
-	font-size:3em; 
-	margin-left:500px;
-	padding:20px}
+  	font-family: 'Josefin Slab', serif;
+	font-size:3.5em;
+  	line-height:.5em;
+	margin-left:25%;
+  	margin-bottom:0px;
+	padding:5px}
 
 
 
 h2{
   	font-weight:bold;
-	font-size:6em;
+	font-size:1.6em;
 	line-height:2em;
 	text-align:left;
 	color:#70110d;
-	padding:0px 5px 0px 5px;
+	padding: 5px 5px 30px 5px;
+  	margin:5px 5px 30px 5px;
+  	float:left;
 	-webkit-transition:color .6s ease;
 	-moz-transition:color .6s ease;
 	-o-transition:color .6s ease;
 	-transition:color .6s ease;
+  	list-style-type:none;
 
 //	@media screen and (max-width:$small){
 //	  font-size:1.5em;
@@ -219,7 +235,13 @@ h2{
 	
 h3{
   text-align:right;
-  color:#000000;
+  clear:both;
+  float:right;
+  position:relative;
+  color:$default_color;
+  margin:15px 15px 15px 15px;
+  padding:20px 20px 20px 20px;
+  font-size:.9em;
 
   @media screen and (max-width:$small){
 	font-size:.6em;
@@ -268,8 +290,16 @@ a:active{
 .selected_link{ text-decoration:none;
 	color: #000000;
 	
-}}
+}
 
+/*#Blog_Archive_Link{
+  font-size:.8em;
+  color:$default_color;
+  text-align:left;
+  clear:both;
+  margin:50px 50px 100px 50px;
+}
+*/
 
 
 
