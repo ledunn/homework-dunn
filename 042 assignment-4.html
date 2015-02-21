@@ -5,18 +5,18 @@ This is Assignment 4 for Intermediate Web Design (CMP 3011). Please read the ins
 JAVASCRIPT EXERCISE
 Please perform the following exercises inside this file (unless directed otherwise), adding the task number in a comment above the completed exercise.
 
-01) Using Javascript, add a paragraph of lorem ipsum (get some at lipsum.com, if needed) above the bulleted list at the bottom of the page.
-02) Define a variable and give it a value of 'today'. Write the value of the variable on the line that says "<h2>Get involved</h2>" so that it reads "<h2>Get involved today</h2>".
-03) On the line that says "Brackets has many users!", replace "many" (just delete the word) with  a JavaScript snippet that multiples 10,000 by 10,000 and divides the sum by 5 and outputs the result.  
-04) Get the text content of the element with an ID of "extension" and print that content to the console log.
-05) Set the text content of the element with an ID of "qv" to "Quicker Viewer".
-06) Create an array of seven pieces of fruit, then print the second and fifth pieces of fruit anywhere in the body of the document. 
+DONE 01) Using Javascript, add a paragraph of lorem ipsum (get some at lipsum.com, if needed) above the bulleted list at the bottom of the page.
+DONE 02) Define a variable and give it a value of 'today'. Write the value of the variable on the line that says "<h2>Get involved</h2>" so that it reads "<h2>Get involved today</h2>".
+DONE 03) On the line that says "Brackets has many users!", replace "many" (just delete the word) with  a JavaScript snippet that multiples 10,000 by 10,000 and divides the sum by 5 and outputs the result.  
+ATTEMPTED; NEEDS TO BE FIXED 04) Get the text content of the element with an ID of "extension" and print that content to the console log.
+ATTEMPTED; NEEDS TO BE FIXED 05) Set the text content of the element with an ID of "qv" to "Quicker Viewer".
+DONE 06) Create an array of seven pieces of fruit, then print the second and fifth pieces of fruit anywhere in the body of the document. 
 07) Replace the contents of the <h3> tags with a function which takes one argument: the text to go into the <h3> tags. The function must also print the <h3> tags.
 08) In the same function as #7, use a method from the string object to convert the text passed into the function to uppercase.
-09) Output the width and height of the browser window anywhere in the body of the document, labeling the dimensions accordingly. For example, "width: 1204, height: 952".
-10) Change the background color of the document. Hint: put the code above the </body> tag.
-11) Create a link that, when clicked, opens an alert dialogue box with the URL of the current webpage.
-12) Reusing code from exercise #6, create a function to output a random piece of fruit from the fruit array. This function must live in an external file. Hint: use the Math object.
+DONE 09) Output the width and height of the browser window anywhere in the body of the document, labeling the dimensions accordingly. For example, "width: 1204, height: 952".
+DONE 10) Change the background color of the document. Hint: put the code above the </body> tag.
+DONE 11) Create a link that, when clicked, opens an alert dialogue box with the URL of the current webpage.
+DONE 12) Reusing code from exercise #6, create a function to output a random piece of fruit from the fruit array. This function must live in an external file. Hint: use the Math object.
 
 OBJECTIVE
 The purpose of this assignment is for students to practice working with several JavaScript language constructs: statements, variables, arrays, functions, and objects. In addition, students will gain a greater understanding of properties, methods, and global objects.
@@ -42,17 +42,64 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         <title>GETTING STARTED WITH BRACKETS</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <!-- <link rel="stylesheet" href="main.css"> -->
+
+      <!--  <style>
+        body{background-color:green} -->
+
+        <script type="text/javascript">
+             function redBackground(){
+                document.body.style.backgroundColor="red";
+                }
+
+                 redBackground()
+            function whiteBackground(){
+                document.body.style.backgroundColor="#FFFFFF";
+            }
+
+            </script>
+    <p>
+
+        <a href="#" onclick=redBackground()>Make Me Red</a>
+    </p>
+    <p>
+        <a href="#" onclick=whiteBackground()>Make Me White</a>
+    </p>    
+
+    </style>
     </head>
     <body>
-        
+      
+
+ <!--Task 06 Completed Below:-->    
+       <script>
+       var fruits= ['papaya', 'watermelon', 'mango', 'pear', 'apple', 'blueberry']
+
+       document.write(fruits[1]+' ' +fruits[3]);
+      
+       </script> 
+
+      
+
+
+
+
         <h1>GETTING STARTED WITH BRACKETS</h1>
         <h2>This is your guide!</h2>
+        
+
+ <!---Task 11 Completed Below-->    
+         <a href='#' onclick="window.alert('042 assignment-4.html')">Click Me </a>
+
+        <script>
+        '#' onclick=window.alert('042 assignment-4.html');
+        </script>
+
         
         <!--
             MADE WITH <3 AND JAVASCRIPT
         -->
         
-    <!--Task 03 Completed Below-->    
+<!--Task 03 Completed Below-->    
         <p>Brackets has 
 
         <script>
@@ -62,7 +109,15 @@ If you have any questions, please send Saul a message through Slack (http://baiz
 
         users!
         </p>
-        
+
+
+<!--Task 12 Completed Below-->        
+        <script>
+       
+
+         var randFruits= fruits[Math.floor(Math.random()*fruits.length)];
+        document.write(randFruits);
+        </script>
 
         <p>
             Welcome to Brackets, a modern open-source code editor that understands web design. It's a lightweight, 
@@ -179,6 +234,22 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         </p>
         
         <h3 id="qv">Quick View</h3>
+        
+ <!--Attempt at Task 05 Below-->
+
+        <script>
+        var qv =document.getElementById("qv");
+        var changeQV= qv.textContent="Quickviewer";
+        
+
+        function changeQV()={
+            document.write(changeQV);
+
+        }
+
+        changeQV();
+
+        </script>
         <p>
             For those of us who haven't yet memorized the color equivalents for HEX or RGB values, Brackets makes
             it quick and easy to see exactly what color is being used. In either CSS or HTML, simply hover over any
@@ -205,6 +276,15 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             the "Install" button next to it.
         </p>
         
+<!--Attempt at Task 04 Below:-->
+        <script> 
+        var extensionContent = document.getElementById('extensionContent');
+        function(extensionContent)= {print 'extensionContent'};
+        
+
+        console.log(function(extensionContent);
+        
+        </script>
         <!--
             LET US KNOW WHAT YOU THINK
         -->
@@ -224,6 +304,14 @@ If you have any questions, please send Saul a message through Slack (http://baiz
 
 <!--Task 01 completed below:-->
         <script> document.write('<p> Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we can not dedicate -- we can not consecrate -- we can not hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.</p>');
+
+        </script>
+
+<!--TASK 09 COMPLETED BELOW-->
+        <script> 
+        document.write('width:'+window.innerWidth+', ')
+        document.write('height:'+window.innerHeight) 
+        
 
         </script>
         <ul>

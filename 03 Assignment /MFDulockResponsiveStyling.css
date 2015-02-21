@@ -7,177 +7,174 @@ HOVER LINK ERROR?
 /*media query and screen size variables*/
 /*color and styling variables*/
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #000000; }
-
-#logo {
-  width: 200px;
-  height: 200px; }
+  background-image: url("images/blackLinen2X.png");
+  font-family: 'Open Sans', sans-serif; }
+  body #logo {
+    width: 200px;
+    height: 200px;
+    opacity: .7; }
+    @media screen and (max-width: 500px) {
+      body #logo {
+        width: 100px;
+        height: 100px;
+        /*opacity:.8;*/
+        margin: 30px 30px 30px 30px; } }
+    @media screen and (max-width: 1540px) {
+      body #logo {
+        width: 250px;
+        height: 250px; } }
+    @media screen and (max-width: 3000px) {
+      body #logo {
+        width: 300px;
+        height: 300px; } }
+  body .nav_menu {
+    list-style-type: none;
+    display: inline;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    clear: both;
+    float: left;
+    position: fixed;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    line-height: 1.3em;
+    overflow: auto; }
+  body .nav_menu li {
+    padding: 10px;
+    font-size: 2em;
+    line-height: 1.6em; }
+    @media screen and (max-width: 500px) {
+      body .nav_menu li {
+        font-size: .8em;
+        color: red;
+        /*CHANGE THIS LATER, FONT COLOR ADDED TO MEDIA QUERY TO TEST IF IT IS WORKING*/ } }
+    @media screen and (max-width: 1540px) {
+      body .nav_menu li {
+        font-size: 1em; } }
+    @media screen and (max-width: 3000px) {
+      body .nav_menu li {
+        font-size: 1.1em; } }
+  body .BlogMainText {
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    clear: both;
+    position: relative;
+    float: right;
+    background-color: #b6a399;
+    box-shadow: none;
+    overflow: auto; }
   @media screen and (max-width: 500px) {
-    #logo {
-      width: 100px;
-      height: 100px;
-      /*opacity:.8;*/
-      margin: 30px 30px 30px 30px; } }
-  @media screen and (max-width: 1540px) {
-    #logo {
-      width: 250px;
-      height: 250px; } }
-  @media screen and (max-width: 3000px) {
-    #logo {
-      width: 300px;
-      height: 300px; } }
-
-.nav_menu {
-  list-style-type: none;
-  display: inline;
-  color: red;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 50px;
-  margin-bottom: 30px;
-  clear: both;
-  float: left;
-  position: fixed;
-  padding: 20px 20px 20px 20px;
-  text-align: left;
-  line-height: 1.3em;
-  overflow: auto; }
-
-.nav_menu li {
-  padding: 10px;
-  font-size: 2em;
-  line-height: 1.6em; }
-  @media screen and (max-width: 500px) {
-    .nav_menu li {
-      font-size: .8em;
-      color: red;
-      /*CHANGE THIS LATER, FONT COLOR ADDED TO MEDIA QUERY TO TEST IF IT IS WORKING*/ } }
-  @media screen and (max-width: 1540px) {
-    .nav_menu li {
-      font-size: 1em; } }
-  @media screen and (max-width: 3000px) {
-    .nav_menu li {
-      font-size: 1.1em; } }
-
-.BlogMainText {
-  width: 50%;
-  height: 50%;
-  margin-top: 20px;
-  margin-left: 500px;
-  margin-right: 100px;
-  margin-bottom: 20px;
-  clear: both;
-  position: relative;
-  float: right;
-  background-color: #b6a399;
-  box-shadow: none;
-  overflow: auto; }
-
-@media screen and (max-width: 500px) {
-  width: 80%;
-  height: 50%;
-  color: red; }
-.BlogArticleImage {
-  width: 30%;
-  height: 25%;
-  clear: both;
-  float: right;
-  position: relative;
-  overflow: auto;
-  margin: 10px 10px 10px 20px;
-  padding: 15px 15px 15px 15px; }
-
-.BlogMainText:hover {
-  box-shadow: 1px 1px 1px #1c0a06, 2px 2px 2px #1c0a06, 3px 3px 3px #1c0a06;
-  -webkit-transform: translateX(-3px) 0.6s ease;
-  -moz-transform: translateX(-3px) 0.6s ease;
-  -o-transform: translateX(-3px) 0.6s ease;
-  transform: translateX(-3px) 0.6s ease; }
-
-.social_media li {
-  list-style-type: none; }
-
-article {
-  clear: both;
-  float: left;
-  background-color: #b6a399;
-  opacity: .8;
-  font-size: .9em;
-  color: #000000;
-  text-align: left;
-  line-height: 1.5em;
-  width: 75%;
-  height: 50%;
-  margin-left: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
-
-h1 {
-  color: #FFFFFF;
-  font-size: 3em;
-  margin-left: 25%;
-  padding: 20px; }
-
-h1 {
-  color: #FFFFFF; }
-
-h2 {
-  font-weight: bold;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  text-align: left;
-  color: #70110d;
-  padding: 0px 5px 0px 5px;
-  -webkit-transition: color .6s ease;
-  -moz-transition: color .6s ease;
-  -o-transition: color .6s ease;
-  -transition: color .6s ease; }
-  @media screen and (max-width: 500px) {
-    h2 {
-      font-size: .8em;
-      line-height: 1.1em; } }
-  @media screen and (max-width: 1540px) {
-    h2 {
-      font-size: 1em;
-      line-height: 1.2em; } }
-
-h3 {
-  text-align: right;
-  color: #000000; }
-  @media screen and (max-width: 500px) {
-    h3 {
-      font-size: .6em; } }
-  @media screen and (max-width: 1540px) {
-    h3 {
-      font-size: .8em; } }
-
-a:link {
-  color: #FFFFFF;
-  text-decoration: none;
-  -webkit-transition: all .6s ease;
-  -moz-transition: all .6s ease;
-  -o-transition: all .6s ease;
-  transition: all .6s ease; }
-
-a:visited {
-  color: #FFFFFF;
-  text-decoration: none; }
-
-a:hover {
-  -webkit-transition: color .6s ease;
-  -moz-transition: color .6s ease;
-  -o-transition: color .6s ease;
-  transition: color .6s ease;
-  color: #D17634; }
-
-a:active {
-  color: #D17634; }
-
-.selected_link {
-  text-decoration: none;
-  color: #000000; }
+    body {
+      width: 80%;
+      height: 50%;
+      color: red; } }
+  body .BlogArticleImage {
+    width: 30%;
+    height: 25%;
+    clear: both;
+    float: right;
+    position: relative;
+    overflow: auto;
+    margin: 10px 10px 10px 20px;
+    padding: 15px 15px 15px 15px; }
+  body .BlogMainText:hover {
+    box-shadow: 1px 1px 1px #1c0a06, 2px 2px 2px #1c0a06, 3px 3px 3px #1c0a06;
+    -webkit-transform: translateX(-3px) 0.6s ease;
+    -moz-transform: translateX(-3px) 0.6s ease;
+    -o-transform: translateX(-3px) 0.6s ease;
+    transform: translateX(-3px) 0.6s ease; }
+  body .social_media li {
+    width: 20px;
+    height: 20px;
+    -webkit-transform: scale(1.5) rotate(-10deg);
+    -moz-transform: scale(1.5) rotate(-10deg);
+    -o-transform: scale(1.5) rotate(-10deg);
+    transform: scale(1.5) rotate(-10deg);
+    list-style-type: none;
+    display: inline;
+    float: left;
+    overflow: auto;
+    padding: 15px 15px 15px 15px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  body article {
+    clear: both;
+    float: left;
+    background-color: #b6a399;
+    opacity: .8;
+    font-size: .9em;
+    color: #000000;
+    text-align: left;
+    line-height: 1.5em;
+    width: 75%;
+    height: 50%;
+    margin-left: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  body h1 {
+    color: #FFFFFF;
+    font-size: 3em;
+    margin-left: 30%;
+    padding: 20px; }
+  body h2 {
+    font-weight: bold;
+    font-size: em;
+    line-height: 2em;
+    text-align: left;
+    color: #70110d;
+    padding: 0px 5px 0px 5px;
+    -webkit-transition: color .6s ease;
+    -moz-transition: color .6s ease;
+    -o-transition: color .6s ease;
+    -transition: color .6s ease; }
+    @media screen and (max-width: 500px) {
+      body h2 {
+        font-size: 1.5em;
+        line-height: 1.5em; } }
+    @media screen and (max-width: 1540px) {
+      body h2 {
+        font-size: 1em;
+        line-height: 1.2em; } }
+  body h3 {
+    text-align: right;
+    color: #000000; }
+    @media screen and (max-width: 500px) {
+      body h3 {
+        font-size: .6em; } }
+    @media screen and (max-width: 1540px) {
+      body h3 {
+        font-size: .8em; } }
+  body a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease; }
+  body a:visited {
+    color: #FFFFFF;
+    text-decoration: none; }
+  body a:hover {
+    -webkit-transition: color .6s ease;
+    -moz-transition: color .6s ease;
+    -o-transition: color .6s ease;
+    transition: color .6s ease;
+    color: #D17634; }
+  body a:active {
+    color: #D17634; }
+  body .selected_link {
+    text-decoration: none;
+    color: #000000; }
 
 /*# sourceMappingURL=MFDulockResponsiveStyling.css.map */
