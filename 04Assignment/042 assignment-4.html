@@ -270,17 +270,54 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         
 <!--Attempt at Task 04 Below:-->
         <script> 
-        var extensionContent = document.getElementById('extension');
-        function extensionContent() {
-            document.write('extensionContent')
-        };
         
+        
+        /*
+        		ISSUES:
+        		
+        		+ quote around a variable name on line 294.
+        		+ we're trying to use a variable, extensionContent, that's defined outside of extensionContent ()
+        		+
+        		+
 
-        console.log(extensionContent());
+        
+        
+        */
+        
+        // define 'extensionContent' as #extension
 
-        console.log(document.write(5+6))
+		// defining a function that prints the content of the above variable 'extensionContent'
+                var extensionContent = document.getElementById('extension');
+/*
+        function extensionContent() {
+
+        	// WANTS TO: write to the document object the value of the 'extensionContent' variable
+        	// IS ACTUALLY DOING: writing nothing.
+            document.write(extensionContent) ;
+        };
+        */
+		// WANTS TO: print the value of 'extensionContent' to the console
+		// IS ACTUALLY DOING: calling the function extensionContent()
+//         console.log( 'above extensionContent' );
+
+        console.log( extensionContent.textContent );
+
+//         console.log( 'below extensionContent' );
+
+        console.log('5+6') ;
         
         </script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <!--
             LET US KNOW WHAT YOU THINK
         -->
