@@ -8,11 +8,11 @@ Please perform the following exercises inside this file (unless directed otherwi
 DONE 01) Using Javascript, add a paragraph of lorem ipsum (get some at lipsum.com, if needed) above the bulleted list at the bottom of the page.
 DONE 02) Define a variable and give it a value of 'today'. Write the value of the variable on the line that says "<h2>Get involved</h2>" so that it reads "<h2>Get involved today</h2>".
 DONE 03) On the line that says "Brackets has many users!", replace "many" (just delete the word) with  a JavaScript snippet that multiples 10,000 by 10,000 and divides the sum by 5 and outputs the result.  
-ATTEMPTED; NEEDS TO BE FIXED 04) Get the text content of the element with an ID of "extension" and print that content to the console log.
-ATTEMPTED; NEEDS TO BE FIXED 05) Set the text content of the element with an ID of "qv" to "Quicker Viewer".
+ATTEMPTED 04) Get the text content of the element with an ID of "extension" and print that content to the console log.
+ATTEMPTED 05) Set the text content of the element with an ID of "qv" to "Quicker Viewer".
 DONE 06) Create an array of seven pieces of fruit, then print the second and fifth pieces of fruit anywhere in the body of the document. 
-07) Replace the contents of the <h3> tags with a function which takes one argument: the text to go into the <h3> tags. The function must also print the <h3> tags.
-08) In the same function as #7, use a method from the string object to convert the text passed into the function to uppercase.
+ATTEMPTED 07) Replace the contents of the <h3> tags with a function which takes one argument: the text to go into the <h3> tags. The function must also print the <h3> tags.
+ATTEMPTED 08) In the same function as #7, use a method from the string object to convert the text passed into the function to uppercase.
 DONE 09) Output the width and height of the browser window anywhere in the body of the document, labeling the dimensions accordingly. For example, "width: 1204, height: 952".
 DONE 10) Change the background color of the document. Hint: put the code above the </body> tag.
 DONE 11) Create a link that, when clicked, opens an alert dialogue box with the URL of the current webpage.
@@ -111,12 +111,9 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         </p>
 
 
-<!--Task 12 Completed Below-->        
-        <script>
-       
-
-         var randFruits= fruits[Math.floor(Math.random()*fruits.length)];
-        document.write(randFruits);
+<!--Link to .js file completing Task 12 Below-->        
+        <script src="mathFruits.js"> 
+        
         </script>
 
         <p>
@@ -238,17 +235,12 @@ If you have any questions, please send Saul a message through Slack (http://baiz
  <!--Attempt at Task 05 Below-->
 
         <script>
-        var qv =document.getElementById("qv");
-        var changeQV= qv.textContent="Quickviewer";
-        
+            var qv =document.getElementById('qv');
+            var changeQV= qv.textContent;
+            changeQV.textContent='Quicker viewer';
 
-        function changeQV()={
-            document.write(changeQV);
 
-        }
-
-        changeQV();
-
+          
         </script>
         <p>
             For those of us who haven't yet memorized the color equivalents for HEX or RGB values, Brackets makes
@@ -278,11 +270,15 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         
 <!--Attempt at Task 04 Below:-->
         <script> 
-        var extensionContent = document.getElementById('extensionContent');
-        function(extensionContent)= {print 'extensionContent'};
+        var extensionContent = document.getElementById('extension');
+        function extensionContent() {
+            document.write('extensionContent')
+        };
         
 
-        console.log(function(extensionContent);
+        console.log(extensionContent());
+
+        console.log(document.write(5+6))
         
         </script>
         <!--
@@ -325,6 +321,19 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
         </ul>
         
+    <!--Task 07 and Task 08 Completed Below-->
+    <script>
+
+        function h3Update(){
+        var h3Tags= getElementsByTagName('h3');
+        document.write(h3Tags);  
+        var h3Caps= h3Tags.toUpperCase;
+        document.write(h3Caps);
+        }
+
+        h3Update()
+    </script>
+
     </body>
 </html>
 <!--
