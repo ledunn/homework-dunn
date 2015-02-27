@@ -26,10 +26,11 @@
 
 		</li>
 
-		<li> <a href="index.html">HOME</a> </li>
+		<li> <a href="MFdulockbloghomepage.html">HOME</a> </li>
 		<li> <a href="photos.html">PHOTOS</a> </li>
 		<li> <a href="meatclub.html">MEAT CLUB</a> </li>
 		<li> <a href="MFDulockbloghomepage.html">BLOG</a> </li>
+		<li> <a href="MFDulockForm.html">CREATE AN ACCOUNT</a></li>
 
 	</ul>
 </nav>
@@ -49,10 +50,10 @@
 
 	<article>
 
-		<h1> Create Your Account </h1>
+		<h1> Create A New Account </h1>
 		<p>
 
-			<form method="post" action="http://google.com">
+			<form id="create_account" method="post" action="http://google.com">
 			<!--Column 1-->
 			<div class="first_name">
 				<h2>
@@ -118,7 +119,7 @@
 
 		<h2>What is your favorite color?</h2>
 		 
-		<form id="favorite_color" action="/pick_color" method="post">
+		<!--<form id="favorite_color" action="/pick_color" method="post">-->
 			
 			<input type="radio" name="pick_color" value="chartreuse" id="chartreuse">
 
@@ -134,8 +135,10 @@
 			<label for="Purple">Purple</label><br>
 
 		<input id="submit" type="submit" value="submit"/>	
+		
 
-
+		<h2> <a href="#" onclick= document.getElementById("create_account").reset;>CLEAR FORM<a/> </h2>
+	
 		</form>	
 
 		</p>
@@ -145,7 +148,7 @@
 
 	<article>
 		<p>
-		<a href="">SUBMIT BUTTON</a>
+	
 		<a href="">CLEAR FORM BUTTON</a>		
 		</p>
 	</article>

@@ -1,4 +1,4 @@
-/*Form Validation scripts/checks below*/
+/*Form Validation scripts, checks, and reset below*/
 
 function validateRequired(el){
 if (isRequired(el)) {
@@ -32,10 +32,8 @@ function validateType(el){
 	}
 }
 
+
 /*Form Validation scripts/checks end*/
-
-
-
 
 
 
