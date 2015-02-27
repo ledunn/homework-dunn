@@ -1,3 +1,44 @@
+/*Form Validation scripts/checks below*/
+
+function validateRequired(el){
+if (isRequired(el)) {
+	var valid=!isEmpty(el);
+	if (!valid) {
+		setErrorMessage(el,  'Field is required');
+	}
+	return valid;
+}
+
+return true;
+}
+
+function isRequired(el) {
+	return ((typeof el.required ==='boolean') && el.required) || typeof el.required === 'string');
+}
+
+function isEmpty(el){
+	return !el.value || el.value === el.placeholder;
+}
+
+function validateType(el){
+	if (!el.value) return true;
+	var type =$el.data('type') || el.getAttribute('type');
+	if (typeof validateType[type]==='function') {
+		return validateType[type](el);
+	} 
+
+	else{
+		return true;
+	}
+}
+
+/*Form Validation scripts/checks end*/
+
+
+
+
+
+
 /*The below script enables the addEvent function? See p. 570-1 in Javascript and JQuery by Jon Duckett for reference*/
 
 //Helper function to add an event listener
@@ -35,8 +76,8 @@ function removeEvent(el, event, callback) {
 /*The below script accepts or rejects the values entered for first and last names. If the first and last name exceeed a value of two characters it returns a value of "true". If they do not meet this minimum it returns a value of "false".
 */
 
-var first_name= document.getElementById('first_name');  	
-var last_name= document.getElementById('last_name');
+var first_name= document.getElementById("first_name");  	
+var last_name= document.getElementById("last_name");
 
 if (first_name.length <=2) { 					//If the length of variable with the Id "first_name" is less than or equal to 2, it is rejected. 
 	target.className="fail";					
@@ -47,7 +88,7 @@ else {target.className="pass"};					//If the length of the variable "first_name"
 
 if (last_name.length <=2){						//If the length of the variable "last_name" is less than or equal to 2, it is rejected. 
 	target.className="fail";
-	document.write('Your last name must be at least two characters.') //If it is rejected, it will print this statement.
+	document.write("Your last name must be at least two characters.") //If it is rejected, it will print this statement.
 };
 	
 else {target.className="pass"};					//If the length of the variable "last_name" is greater than 2, it is accepted.
@@ -55,12 +96,24 @@ else {target.className="pass"};					//If the length of the variable "last_name" 
 
 /*End of script accepting or rejecting first and last name form value fields.*/
 
+/*The below script checks the value/length of the username. If it is greater than 7 characters, it accepts the user's entry. Otherwise, it rejects it.*/
+
+var username=document.getElementById("username")
+
+if (username.length <=6){
+	target.className="fail";
+	document.write("Your username must be at least 7 characters.")
+};
+
+else {target.className="pass"};
 
 
 
 
 
-/*The below script enables password storage and verification.
+
+
+/*The below script enables password storage and verification. (??)
 	+ Password and Password confirmation fields must match.
 	+Password must be greater than 8 characters and inlude at least 1 number*/
 function (){
@@ -192,4 +245,16 @@ if (color_picked="chartreuse"){
         document.write("<a href="#" onclick=chartreuseBackground()>Make Me Chartreuse</a>");
 
         */
+addEvent(form, 'submit',function(e)) {
+	document.write("Thank you for creating an account! Your Account information is listed below:");
 
+	var first_name = getElementById("first_name");
+	var last_name = getElementById("last_name");
+	var email = getElementById("email");
+	var username = getElementById("username");
+	var password = getElementById("password");
+
+	document.write(first_name+"<br></br>"+last_name+"<br></br>"+email+"<br></br>"+username+"<br></br>"+password+"<br></br>")
+
+
+}

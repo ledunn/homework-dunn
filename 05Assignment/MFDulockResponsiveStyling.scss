@@ -316,6 +316,8 @@ textarea:focus, input:focus {
 
 }
 
+input:invalid +label::after{border: 1px solid red}
+
 
 
 

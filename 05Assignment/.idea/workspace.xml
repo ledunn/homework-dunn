@@ -28,8 +28,8 @@
       <file leaf-file-name="MFDulockResponsiveStyling.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26497278" vertical-offset="4324" max-vertical-offset="4905">
-              <caret line="298" column="23" selection-start-line="298" selection-start-column="23" selection-end-line="298" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.7005445" vertical-offset="4384" max-vertical-offset="4935">
+              <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -38,10 +38,19 @@
       <file leaf-file-name="MFDulockFormScript.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MFDulockFormScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="18.333334" vertical-offset="1185" max-vertical-offset="2295">
-              <caret line="46" column="72" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="3375">
+              <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1425072702000" expanded="true" signature="4513:4649" placeholder="/*...*/" />
+                <marker date="1425072702000" expanded="true" signature="4552:5397" placeholder="{...}" />
+                <marker date="1425072702000" expanded="true" signature="5054:5152" placeholder="{...}" />
+                <marker date="1425072702000" expanded="true" signature="5232:5394" placeholder="{...}" />
+                <marker date="1425072702000" expanded="true" signature="5319:5346" placeholder="{...}" />
+                <marker date="1425072702000" expanded="true" signature="5778:5903" placeholder="/*...*/" />
+                <marker date="1425072702000" expanded="true" signature="5831:6126" placeholder="/*...*/" />
+                <marker date="1425072702000" expanded="true" signature="6210:6281" placeholder="{...}" />
+                <marker date="1425072702000" expanded="true" signature="6357:6430" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -50,7 +59,7 @@
       <file leaf-file-name="MFDulockForm.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MFDulockForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.647059" vertical-offset="1716" max-vertical-offset="3030">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3000">
               <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
               <folding />
             </state>
@@ -147,21 +156,21 @@
     <frame x="59" y="23" width="1289" height="672" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -189,19 +198,63 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4905">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MFDulockFormScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="18.333334" vertical-offset="1185" max-vertical-offset="2295">
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="2250">
           <caret line="46" column="72" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="72" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1425072702000" expanded="true" signature="4513:4649" placeholder="/*...*/" />
+            <marker date="1425072702000" expanded="true" signature="4552:5397" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5054:5152" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5232:5394" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5319:5346" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5778:5903" placeholder="/*...*/" />
+            <marker date="1425072702000" expanded="true" signature="5831:6126" placeholder="/*...*/" />
+            <marker date="1425072702000" expanded="true" signature="6210:6281" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="6357:6430" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MFDulockForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.647059" vertical-offset="1716" max-vertical-offset="3030">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3000">
+          <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockFormScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="3375">
+          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1425072702000" expanded="true" signature="4513:4649" placeholder="/*...*/" />
+            <marker date="1425072702000" expanded="true" signature="4552:5397" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5054:5152" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5232:5394" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5319:5346" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="5778:5903" placeholder="/*...*/" />
+            <marker date="1425072702000" expanded="true" signature="5831:6126" placeholder="/*...*/" />
+            <marker date="1425072702000" expanded="true" signature="6210:6281" placeholder="{...}" />
+            <marker date="1425072702000" expanded="true" signature="6357:6430" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3000">
           <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
           <folding />
         </state>
@@ -209,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26497278" vertical-offset="4324" max-vertical-offset="4905">
-          <caret line="298" column="23" selection-start-line="298" selection-start-column="23" selection-end-line="298" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.7005445" vertical-offset="4384" max-vertical-offset="4935">
+          <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
           <folding />
         </state>
       </provider>

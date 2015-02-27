@@ -200,4 +200,7 @@ textarea:focus, input:focus {
   background-color: #FCE1A2;
   border: 1px solid #000000; }
 
+input:invalid + label::after {
+  border: 1px solid red; }
+
 /*# sourceMappingURL=MFDulockResponsiveStyling.css.map */
