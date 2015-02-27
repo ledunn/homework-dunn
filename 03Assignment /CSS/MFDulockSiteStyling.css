@@ -1,0 +1,239 @@
+
+body{font-family: 'Open Sans', sans-serif;}
+
+.index{ background-image:url(images/MFDulockSiteImage6.jpg);
+	background-repeat:no-repeat; background-size:2000px, 2000px; background-attachment:fixed;}
+
+header{
+	
+	color:#FFFFFF;
+	font-size:1.2em;
+	text-align:center;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:2em;
+	padding:20px 20px 20px 20px;
+	width:50%;
+}
+
+.social_media{
+	list-style-type:none;
+	display:inline;
+	float:right;
+	position:relative;
+	margin-top:0px;
+	margin-right:40px;
+	padding:15px 15px 15px 15px;
+
+}
+
+.social_media li{
+	float:left;
+	padding:5px 5px 5px 5px;
+}
+
+.grow{
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+
+	/*-webkit-transition-property: opacity:.8;
+	-moz-transition: opacity: .8;
+	-o-transition: opacity: .8;
+	opacity:.8;*/
+}
+
+.grow:hover{
+	-webkit-transform:scale(1.5) rotate:(-10deg);
+	-moz-transform:scale(1.5) rotate(-10deg);
+	-o-transform:scale(1.5) rotate(-10deg);
+	transform:scale(1.5) rotate(-10deg); 
+
+	/*-webkit-transition: opacity:1;
+	-moz-transition: opacity:1;
+	-o-transition: opacity:1;
+	opacity:1;*/
+
+	
+}
+
+.nav_menu{
+
+	list-style-type:none;
+	display:inline; 
+	color:#FFFFFF; 
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:50px;
+	margin-bottom:50px;
+	clear:both;
+	float:left;
+	position:fixed;
+	padding:15px 15px 15px 15px;
+	text-align:left;
+	line-height:1.3em; 
+	
+}	
+
+.nav_menu li{
+	padding:10px;
+	font-size:1.1em;
+}
+.nav_menu li:hover{
+
+}
+
+.store_title{font-family:serif;font-style:italic; font-size:1.5em; line-height:3em;}
+
+.BlogMainText{
+	/*z-index:10;*/
+	margin-top:20px;
+	width:60%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px; 
+	clear:both;
+	position:relative;
+	background-color:#b6a399;
+	box-shadow:none
+}
+
+.BlogMainText:hover{
+	box-shadow:
+		1px 1px 1px #1c0a06,
+		2px 2px 2px #1c0a06,
+		3px 3px 3px #1c0a06;
+
+	-webkit-transform: translateX(-3px) .6s ease;
+	-moz-transform: translateX(-3px) .6s ease;
+	-o-transform: translateX(-3px) .6s ease;
+	transform:translateX(-3px) .6s ease;
+}
+
+article {
+	clear:both;
+	background-color:#b6a399; 
+	opacity:.8;
+	font-size:.9em;
+	text-align:left;
+	line-height:1.5em;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	padding-left:30px;
+	padding-right: 30px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	
+}
+
+h2 {
+	font-weight:bold; 
+	font-size:1.5em; 
+	line-height:1.5em;
+	text-align:center;
+	color:#70110d;
+	padding:0px 5px 5px 5px;
+	-webkit-transition:color .6s ease;
+	-moz-transition:color .6s ease;
+	-o-transition:color .6s ease;
+	-transition:color .6s ease;}
+
+h2:hover{color:#FFFFFF;}	
+
+h3{
+	text-align:center;
+	line-height:1.5em;
+	padding:5px 5px 5px 5px;}
+
+
+
+#logo{
+	opacity:.8;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+	-o-transition: opacity .2s ease;
+	transition: opacity .2s ease;}
+
+#logo:hover{opacity:1;}	
+
+
+
+.BlogArticleImage {
+	clear:both;
+	float:right;
+	position:relative;
+	margin:10px 10px 10px 10px;
+	padding:5px 5px 5px 5px;
+}	
+
+a:link{
+	color:#FFFFFF; text-decoration:none;
+	-webkit-transition:all .6s ease;
+	-moz-transition:all .6s ease;
+	-o-transition:all .6s ease;
+	transition:all .6s ease;
+}	
+
+a:visited{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a:hover{
+	webkit-transition: color:#D17634;
+	-moz-transition:color:#D17634;
+	-o-transition:color:#D17634;
+	color:#D17634;
+}
+
+a:active{
+	color:#D17634;
+}
+
+.selected_link{ text-decoration:none;
+	color: #000000;
+	
+}
+
+.blog_links{
+	display:inline-block;
+	text-align:center;
+	margin:10px 0px 10px 10px;
+	padding: 10px 0px 10px 10px;
+	clear:both;
+	
+	position:relative;
+	background-color:#b6a399;
+	width:100%;
+	font-weight:bold;
+	color:#1c0a06;
+	a:link{text-decoration:none;
+	a:hover:text-decoration:none};
+
+}
+
+.BlogHomePageLink {
+	/*font-family:'Merriweather';*/
+	letter-spacing:2px;
+	color:#FFFFFF;
+	margin-top:5px;
+	margin-left:240px;
+	margin-right:240px;
+	font-size:3em;
+	font-weight:bold;
+	line-height:2em;
+	text-decoration:none;
+	text-align:center;
+	padding-top:25px;
+	padding-right:15px;
+	padding-left:15px;
+	padding-bottom:0px;
+	
+	
+}
+
+.BlogHomePageLink a{color:#1c0a06}
+.BlogHomePageLink a:hover{color:#FFFFFF;}

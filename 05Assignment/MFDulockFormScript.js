@@ -1,0 +1,195 @@
+/*The below script enables the addEvent function? See p. 570-1 in Javascript and JQuery by Jon Duckett for reference*/
+
+//Helper function to add an event listener
+
+function addEvent(el, event, callback){
+	if ('addEventListener' in el) { 			//If addEventListener works
+		el.addEventListener(event, callback, false); //Use it
+	} else {									//Otherwise
+		el['e'+ event + callback]= callback; 	//Make callback a method el
+		el[event+callback]=function(){			//Add second method
+			el['e'+event+callback](window.event); //Use it to call prev func
+		};
+		el.attachEvent('on'+ event, el[event+callback]); //Use attachEvent()
+
+	}			//to call the second function, which then calls the first one
+}
+
+//Helper function to remove an event listener
+
+function removeEvent(el, event, callback) {
+	if ('removeEventListener' in el) {
+		el.removeEventListener(event, callback, false);
+	}
+	else {
+		el.detachEvent('on'+event, el[event+callback]);
+		el[event+callback]=null;
+		el['e' +event+callback]=null;
+	}
+
+}
+
+/*This is the end of the Utilities File/addEvent function script*/ 
+
+
+/*The below script accepts or rejects the values entered for first and last names. If the first and last name exceeed a value of two characters it returns a value of "true". If they do not meet this minimum it returns a value of "false".
+*/
+
+var first_name= document.getElementById('first_name');  	
+var last_name= document.getElementById('last_name');
+
+if (first_name.length <=2) { 					//If the length of variable with the Id "first_name" is less than or equal to 2, it is rejected. 
+	target.className="fail";					
+	document.write("Your first name must be at least two characters.") //If it is rejected; it will print this statement.
+};
+
+else {target.className="pass"};					//If the length of the variable "first_name" is greater than 2, it is accepted.
+
+if (last_name.length <=2){						//If the length of the variable "last_name" is less than or equal to 2, it is rejected. 
+	target.className="fail";
+	document.write('Your last name must be at least two characters.') //If it is rejected, it will print this statement.
+};
+	
+else {target.className="pass"};					//If the length of the variable "last_name" is greater than 2, it is accepted.
+
+
+/*End of script accepting or rejecting first and last name form value fields.*/
+
+
+
+
+
+
+/*The below script enables password storage and verification.
+	+ Password and Password confirmation fields must match.
+	+Password must be greater than 8 characters and inlude at least 1 number*/
+function (){
+
+	var password= document.getElementById('password');
+	var passwordConfirm= document.getElementById('conf-password');
+	function setErrorHighlighter(e){
+		var target= e.target || e.srcElement;
+			if (target.value.length<8){
+			target.className='fail';
+			}
+		//YOU STILL NEED TO ADD A NUMBER REQUIREMENT FOR THE PASSWORD IN THE SCRIPT HERE//
+			else {
+			target.className='pass';
+			}
+		}
+	
+	 function removeErrorHighlighter(e) {
+	 	var target=e.target || e.srcElement;
+	 	if (target.className ==='fail'){
+	 		target.className='';
+	 	}
+
+	 } 
+
+	 function passwordsMatch(e) {
+	 	var target= e.target || e.srcElement;
+	 	if ((password.value===target.value) && (target.value.length >=8) && (target.value.search(/(0-9)+/)){
+	 		target.className='pass';
+	 	}
+	 	else{
+	 		target.className='fail';
+	 	}
+
+	 }
+
+	addEvent (password,'focus', removeErrorHighlighter);
+	addEvent (password, 'blur', setErrorHighlighter);
+	addEvent (passwordConfirm,'focus', removeErrorHighlighter);
+	addEvent (passwordConfirm, 'blur', passwordsMatch);
+}());
+/*End of the password storage and verification script*/	
+
+
+
+/*The below function(s) create the radio button options for the "What Is Your Favorite Color? Question on the "Create An Account" Page*/
+function() {
+	
+	var form, options, other, otherText, hide;
+
+	form =document.getElementById('favorite_color');
+	options=form.elements.pick_color;
+	other = document.getElementById('other');
+	otherText = document.getElementById('other_text');
+	otherText.className='hide';
+
+
+	for (var i=[0]; i<options.length;i++) {
+
+		addEvent(options[i],'click', radioChanged);
+
+	}
+
+	fuctionradioChanged()
+	{
+		hide=other.checked ?'': 'hide';
+		otherText.className=hide;
+		if(hide){
+			otherText.value='';
+
+		}
+
+	}
+}());
+
+/*End of the functions for the radio buttons on the "What is Your Favorite Color?" Question on the "Create an Account" Page*/
+
+/*The script below changes background color of the site's page. This needs to be integrated with the radio button color choices so that whichever color the user chooses is the color the background is changed to. Example: selecting "chartreuse" will change the background to a chartreuse color.*/
+
+
+
+var color_picked = document.getElementById($("form input[type='radio']:checked").val()); //Gets the value of a checked radio button
+
+if (color_picked="chartreuse"){
+	document.body.style.backgroundColor="#88D12E";
+}
+	else (color_picked="red"){
+		document.body.style.backgroundColor="#D4171A"
+	};
+
+	else (color_picked="blue"){
+		document.body.style.backgroundColor="#2705ED"
+
+	};
+
+	else (color_picked="purple"){
+		document.body.style.backgroundColor="5DC291"
+	};
+
+/*
+            function chartreuseBackground(){
+            	document.body.style.backgroundColor="#88D12E";
+			 	}
+
+			 	chartreuseBackground()
+
+            function redBackground(){
+                document.body.style.backgroundColor="#D4171A";
+                }
+
+                 redBackground()
+            	
+            function blueBackground(){
+                document.body.style.backgroundColor="#2705ED";
+            	}
+            	blueBackground()
+
+            function purpleBackground(){
+            	document.body.style.backgroundColor="#5DC291";
+           		}	
+            	purpleBackground()
+
+
+
+
+        document.write("<a href="#" onclick=redBackground()>Make Me Red</a>");
+
+
+        document.write("<a href="#" onclick=chartreuseBackground()>Make Me Chartreuse</a>");
+
+        */
+
