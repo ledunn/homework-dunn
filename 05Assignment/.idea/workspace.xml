@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MFDulockResponsiveStyling.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MFDulockResponsiveStyling.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7005445" vertical-offset="4384" max-vertical-offset="4935">
-              <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
+            <state vertical-scroll-proportion="-4.8333335" vertical-offset="5119" max-vertical-offset="5805">
+              <caret line="349" column="0" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,29 +38,18 @@
       <file leaf-file-name="MFDulockFormScript.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MFDulockFormScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="3375">
-              <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1425072702000" expanded="true" signature="4513:4649" placeholder="/*...*/" />
-                <marker date="1425072702000" expanded="true" signature="4552:5397" placeholder="{...}" />
-                <marker date="1425072702000" expanded="true" signature="5054:5152" placeholder="{...}" />
-                <marker date="1425072702000" expanded="true" signature="5232:5394" placeholder="{...}" />
-                <marker date="1425072702000" expanded="true" signature="5319:5346" placeholder="{...}" />
-                <marker date="1425072702000" expanded="true" signature="5778:5903" placeholder="/*...*/" />
-                <marker date="1425072702000" expanded="true" signature="5831:6126" placeholder="/*...*/" />
-                <marker date="1425072702000" expanded="true" signature="6210:6281" placeholder="{...}" />
-                <marker date="1425072702000" expanded="true" signature="6357:6430" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="4215">
+              <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MFDulockForm.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MFDulockForm.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MFDulockForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3000">
-              <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.054446463" vertical-offset="795" max-vertical-offset="2895">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -73,6 +62,7 @@
       <list>
         <option value="$PROJECT_DIR$/MFDulockFormScript.js" />
         <option value="$PROJECT_DIR$/MFDulockResponsiveStyling.scss" />
+        <option value="$PROJECT_DIR$/MFDulockForm.html" />
       </list>
     </option>
   </component>
@@ -115,6 +105,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="05Assignment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05Assignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05Assignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MFDulockResponsiveStyling.scss" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -200,35 +204,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4905">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1261" max-vertical-offset="5505">
+          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MFDulockFormScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="2250">
-          <caret line="46" column="72" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="72" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1425072702000" expanded="true" signature="4513:4649" placeholder="/*...*/" />
-            <marker date="1425072702000" expanded="true" signature="4552:5397" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5054:5152" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5232:5394" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5319:5346" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5778:5903" placeholder="/*...*/" />
-            <marker date="1425072702000" expanded="true" signature="5831:6126" placeholder="/*...*/" />
-            <marker date="1425072702000" expanded="true" signature="6210:6281" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="6357:6430" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="3960">
+          <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MFDulockForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3000">
-          <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2940">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4935">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -237,18 +238,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="3375">
           <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1425072702000" expanded="true" signature="4513:4649" placeholder="/*...*/" />
-            <marker date="1425072702000" expanded="true" signature="4552:5397" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5054:5152" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5232:5394" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5319:5346" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="5778:5903" placeholder="/*...*/" />
-            <marker date="1425072702000" expanded="true" signature="5831:6126" placeholder="/*...*/" />
-            <marker date="1425072702000" expanded="true" signature="6210:6281" placeholder="{...}" />
-            <marker date="1425072702000" expanded="true" signature="6357:6430" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -262,8 +252,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7005445" vertical-offset="4384" max-vertical-offset="4935">
-          <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4905">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockFormScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="2250">
+          <caret line="46" column="72" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3000">
+          <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33211678" vertical-offset="1303" max-vertical-offset="3750">
+          <caret line="99" column="27" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockBlogHomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3484573" vertical-offset="1294" max-vertical-offset="2265">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockFormScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="4080">
+          <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockResponsiveStyling.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8333335" vertical-offset="5119" max-vertical-offset="5805">
+          <caret line="349" column="0" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MFDulockForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.054446463" vertical-offset="795" max-vertical-offset="2895">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding />
         </state>
       </provider>

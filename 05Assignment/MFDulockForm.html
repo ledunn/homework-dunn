@@ -33,7 +33,25 @@
 		<li> <a href="MFDulockForm.html">CREATE AN ACCOUNT</a></li>
 
 	</ul>
-</nav>
+	</nav>
+	<ul class="social_media">
+			<li>
+
+				<a href="https://twitter.com/mfdulock"> <img src="images/twitter.png" alt="twitter icon link" > </a>
+
+			</li>
+
+			<li>
+
+				<a href="http://instagram.com/mfdulock"> <img src="images/instagram.png" alt="instagram icon link">  </a>
+			</li>
+
+			<li>
+				<a href="https://www.facebook.com/mfdulock"> <img src="images/facebook.png" alt="facebook icon link">  </a>
+			</li>
+
+	</ul>
+
 
 <header>
 
@@ -50,37 +68,38 @@
 
 	<article>
 
-		<h1> Create A New Account </h1>
+		<h2 id="create_account_header"> Create A New Account </h2>
 		<p>
 
-			<form id="create_account" method="post" action="http://google.com">
-			<!--Column 1-->
+			<form id="create_account" method="post" action="/MFDulockForm.html">
+		<div class="left_column">
 			<div class="first_name">
 				<h2>
-					<label for="first_name" class="required"> First Name:</label
+					<label for='first_name' class="required"> First Name:</label
 					>
 				</h2>
-					<input type"text" placeholder="First Name" name="first_name" id="first_name" required title="Please Enter Your First Name">
+					<input type="text" placeholder="First Name" name="first_name" id="first_name" required title="Please Enter Your First Name">
 			</div>
-
+		</div>
+		<div class="right column">
 			<div class="last_name">
 				<h2>
 					<label for="last_name" class="required"> Last Name:</label
 					>
 				</h2>
-					<input type"text" placeholder="Last Name" name="last_name" id="last_name" required title="Please Enter Your Last Name">
+					<input type="text" placeholder="Last Name" name="last_name" id="last_name" required title="Please Enter Your Last Name">
 			</div>
-		
+		</div>
+		<div class="left_column">
 			<div class="email">
 				<h2>
 					<label for="email" class="required">E-mail:</label>
 
 				</h2>	
 					<input type="email" placeholder="you@domain.com" name="email" id="email" required>
-
-
 			</div>
-
+		</div>	
+		<div class="right_column">
 			<div class="username">
 				<h2>
 					<label for="username">Username</label>
@@ -88,7 +107,8 @@
 
 				<input type="text" id="username" name="username"/>	
 			</div>	
-
+		</div>
+		<div class="left column">	
 			<div class="password">
 				<h2>
 					<label for="password" class="required">Password:</label>
@@ -97,25 +117,17 @@
 					<input type="password" name="password" id="password" required>
 
 			</div>	
+		</div>
+		<div class="right_column">	
 			<div class="password"> 
 				<h2>
 					<label for="conf_password" class="required">Confirm password:</label>
 				</h2>
 					<input type="password" name="conf_password" id="conf_password" required>
-
-
 			</div>	
-			
+		</div>
 
-		</p>
 
-	</article>
-
-	
-
-	<article>
-
-		<p>
 
 		<h2>What is your favorite color?</h2>
 		 
@@ -137,7 +149,7 @@
 		<input id="submit" type="submit" value="submit"/>	
 		
 
-		<h2> <a href="#" onclick= document.getElementById("create_account").reset;>CLEAR FORM<a/> </h2>
+		<h2> <a href="#" onclick= alert("Warning: Clearing This Form Will Remove All Data You Have Entered"); href="#" onclick= document.getElementById("create_account").reset();>CLEAR FORM</a> </h2>
 	
 		</form>	
 
@@ -149,7 +161,7 @@
 	<article>
 		<p>
 	
-		<a href="">CLEAR FORM BUTTON</a>		
+		<!--<a href="">CLEAR FORM BUTTON</a>	-->	
 		</p>
 	</article>
 
@@ -167,28 +179,7 @@
 </div>
 
 
-<footer class="social_media">
 
-
-		<ul>
-			<li>
-
-				<a href="https://twitter.com/mfdulock"> <img src="images/twitter.png" alt="twitter icon link" > </a>
-
-			</li>
-
-			<li>
-
-				<a href="http://instagram.com/mfdulock"> <img src="images/instagram.png" alt="instagram icon link">  </a>
-			</li>
-
-			<li>
-				<a href="https://www.facebook.com/mfdulock"> <img src="images/facebook.png" alt="facebook icon link">  </a>
-			</li>
-
-		</ul>
-
-</footer>
 </body>
 
 </html>

@@ -96,16 +96,17 @@ else {target.className="pass"};					//If the length of the variable "last_name" 
 
 /*The below script checks the value/length of the username. If it is greater than 7 characters, it accepts the user's entry. Otherwise, it rejects it.*/
 
+function checkUsername(){
 var username=document.getElementById("username")
 
-if (username.length <=6){
-	target.className="fail";
-	document.write("Your username must be at least 7 characters.")
-};
+if (username.value.length <=6){
+	document.write("Your username must be at least 7 characters.");
+}
 
 else {target.className="pass"};
+}
 
-
+elUserName.onsubmit=checkUsername; //Calls  the function to run when the form is submitted? Is this necessary or will the scripts run through for the form and be sufficient?
 
 
 
@@ -114,20 +115,22 @@ else {target.className="pass"};
 /*The below script enables password storage and verification. (??)
 	+ Password and Password confirmation fields must match.
 	+Password must be greater than 8 characters and inlude at least 1 number*/
-function (){
+function checkPassword(){
 
 	var password= document.getElementById('password');
 	var passwordConfirm= document.getElementById('conf-password');
 	function setErrorHighlighter(e){
 		var target= e.target || e.srcElement;
-			if (target.value.length<8){
+			if (target.value.length<8) && target.value.search(/(0-9)+/)){
 			target.className='fail';
 			}
-		//YOU STILL NEED TO ADD A NUMBER REQUIREMENT FOR THE PASSWORD IN THE SCRIPT HERE//
+	
 			else {
 			target.className='pass';
 			}
 		}
+
+
 	
 	 function removeErrorHighlighter(e) {
 	 	var target=e.target || e.srcElement;
@@ -153,6 +156,11 @@ function (){
 	addEvent (passwordConfirm,'focus', removeErrorHighlighter);
 	addEvent (passwordConfirm, 'blur', passwordsMatch);
 }());
+
+elPassword.onsubmit=checkPassword;  //Calls the checkPassword function to run when the user presses submit? Is this redundant?
+
+
+
 /*End of the password storage and verification script*/	
 
 
@@ -169,7 +177,7 @@ function() {
 	otherText.className='hide';
 
 
-	for (var i=[0]; i<options.length;i++) {
+	for (var color_picked=[0]; color_picked<options.length; color_picked++) {
 
 		addEvent(options[i],'click', radioChanged);
 
