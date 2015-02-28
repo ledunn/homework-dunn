@@ -2,37 +2,7 @@
 /*color and styling variables*/
 body {
   background-image: url("images/blackLinen2X.png");
-  font-family: 'Open Sans', sans-serif, 'Josefin Slab', serif;
-  /*@mixin grow_and_rotate {
-  	-webkit-transform:scale(1.5) rotate(-10deg);
-  	-moz-transform:scale(1.5) rotate(-10deg);
-  	-o-transform:scale(1.5) rotate(-10deg);
-  	transform:scale(1.5) rotate(-10deg);}
-  
-  
-  .social_media {
-    li {
-  	width: 30px;
-  	height: 30px;
-  	list-style-type: none;
-  	display: inline;
-  	float: left;
-  	//		position:absolute;
-  	overflow: auto;
-  	//		margin-top:500px;
-  	//  	margin-left:30px;
-  	//		margin-right:40px;
-  	padding: 5px 5px 5px 5px;
-  
-  
-    		}
-    li.hover{
-  	@include grow_and_rotate;
-  //	-webkit-transition: all .5s;
-  //	-moz-transition: all .5s ease;
-  //	-o-transition: all .5s ease;
-  //	transition: all .5s ease;
-    }*/ }
+  font-family: 'Open Sans', sans-serif, 'Josefin Slab', serif; }
   body #logo {
     width: 150px;
     height: 150px;
@@ -83,59 +53,93 @@ body {
     @media screen and (max-width: 2050px) {
       body .nav_menu li {
         font-size: 1.1em; } }
-    body .nav_menu li .social_media li {
+    body .nav_menu li .social_media {
       list-style-type: none;
       width: 30px;
       height: 30px;
-      display: inline;
+      display: inline-block;
       float: left;
-      position: fixed;
+      position: relative;
       overflow: auto;
+      margin-top: 500px;
       padding: 5px 5px 5px 5px; }
     body .nav_menu li .social_media li.hover {
       -webkit-transform: scale(1.5) rotate(-10deg);
       -moz-transform: scale(1.5) rotate(-10deg);
       -o-transform: scale(1.5) rotate(-10deg);
       transform: scale(1.5) rotate(-10deg); }
-    body .nav_menu li .social_media img {
+    body .nav_menu li img {
       width: 25px;
       height: 25px; }
-  body .BlogMainText {
-    width: 70%;
-    height: 50%;
-    margin-top: 50px;
-    margin-left: 30%;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    clear: both;
-    position: relative;
-    float: right;
-    background-color: #b6a399;
-    box-shadow: none;
-    overflow: auto; }
-  @media screen and (max-width: 800px) {
-    body {
-      width: 80%;
-      height: 50%;
-      color: red; } }
-  body .BlogArticleImage {
-    width: 60%;
-    height: 40%;
-    clear: both;
-    float: right;
-    position: relative;
-    overflow: auto;
-    margin: 0px 0px 0px 0px;
-    padding: 5px 5px 5px 5px; }
-  body .BlogMainText:hover {
-    box-shadow: 1px 1px 1px #1c0a06, 2px 2px 2px #1c0a06, 3px 3px 3px #1c0a06;
-    -webkit-transform: translateX(-3px) 0.6s ease;
-    -moz-transform: translateX(-3px) 0.6s ease;
-    -o-transform: translateX(-3px) 0.6s ease;
-    transform: translateX(-3px) 0.6s ease; }
-  body img {
-    width: 25px;
-    height: 25px; }
+
+.BlogMainText {
+  width: 70%;
+  height: 50%;
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  clear: both;
+  position: relative;
+  float: right;
+  background-color: #b6a399;
+  box-shadow: none;
+  overflow: auto; }
+
+@media screen and (max-width: 800px) {
+  width: 80%;
+  height: 50%;
+  color: red; }
+.BlogArticleImage {
+  width: 60%;
+  height: 40%;
+  clear: both;
+  float: right;
+  position: relative;
+  overflow: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px; }
+
+.BlogMainText:hover {
+  box-shadow: 1px 1px 1px #1c0a06, 2px 2px 2px #1c0a06, 3px 3px 3px #1c0a06;
+  -webkit-transform: translateX(-3px) 0.6s ease;
+  -moz-transform: translateX(-3px) 0.6s ease;
+  -o-transform: translateX(-3px) 0.6s ease;
+  transform: translateX(-3px) 0.6s ease; }
+
+/*@mixin grow_and_rotate {
+	-webkit-transform:scale(1.5) rotate(-10deg);
+	-moz-transform:scale(1.5) rotate(-10deg);
+	-o-transform:scale(1.5) rotate(-10deg);
+	transform:scale(1.5) rotate(-10deg);}
+
+
+.social_media {
+  li {
+	width: 30px;
+	height: 30px;
+	list-style-type: none;
+	display: inline;
+	float: left;
+	//		position:absolute;
+	overflow: auto;
+	//		margin-top:500px;
+	//  	margin-left:30px;
+	//		margin-right:40px;
+	padding: 5px 5px 5px 5px;
+
+
+  		}
+  li.hover{
+	@include grow_and_rotate;
+//	-webkit-transition: all .5s;
+//	-moz-transition: all .5s ease;
+//	-o-transition: all .5s ease;
+//	transition: all .5s ease;
+  }*/
+img {
+  width: 25px;
+  height: 25px; }
 
 article {
   float: left;
