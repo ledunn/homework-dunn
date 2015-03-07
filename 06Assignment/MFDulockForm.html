@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSSResetFile.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="MFDulockResponsiveStyling.css"/>
+
+
+	<!--<script src="MFDulockFormScript.js"> -->
+	</script>
+
+
+</head>
+<body>
+
+
+<nav>
+
+
+	<ul class="nav_menu">
+
+		<a href="MFDulockBlogHomePage.html">
+			<img id="logo" src='images/InvertedLogoMFDulock.jpg' alt="MF Dulock Business logo">
+		</a>
+
+		</li>
+
+		<li> <a href="MFdulockbloghomepage.html">HOME</a> </li>
+		<li> <a href="photos.html">PHOTOS</a> </li>
+		<li> <a href="meatclub.html">MEAT CLUB</a> </li>
+		<li> <a href="MFDulockbloghomepage.html">BLOG</a> </li>
+		<li> <a href="MFDulockForm.html">CREATE AN ACCOUNT</a></li>
+
+	</ul>
+	</nav>
+	<ul class="social_media">
+			<li class="social_media">
+
+				<a href="https://twitter.com/mfdulock"> <img src="images/twitter.png" alt="twitter icon link" > </a>
+
+			</li>
+
+			<li class="social_media">
+
+				<a href="http://instagram.com/mfdulock"> <img src="images/instagram.png" alt="instagram icon link">  </a>
+			</li>
+
+			<li class="social_media">
+				<a href="https://www.facebook.com/mfdulock"> <img src="images/facebook.png" alt="facebook icon link">  </a>
+			</li>
+
+	</ul>
+
+
+<header>
+
+	<!--<a href="MFDulockBlogHomePage.html">
+    <img id="logo" src='images/MFDulockSiteLogo.jpeg' alt="MF Dulock Business logo" style="width:300px; height:300px">
+    </a>-->
+
+	<h1>Dulock's Blog </h1>
+
+
+</header>
+
+<div class="BlogMainText">
+
+	<article>
+
+		<h2 id="create_account_header"> Create A New Account </h2>
+		<p>
+
+			<form id="create_account" method="post" action="/MFDulockForm.html">
+		<div class="left_column">
+			<div class="first_name">
+				<h2>
+					<label for='first_name' class="required"> First Name:</label
+					>
+				</h2>
+					<input type="text" placeholder="First Name" name="first_name" id="first_name" required title="Please Enter Your First Name">
+			</div>
+		</div>
+		
+		<div class="right column">
+			<div class="last_name">
+				<h2>
+					<label for="last_name" class="required"> Last Name:</label
+					>
+				</h2>
+					<input type="text" placeholder="Last Name" name="last_name" id="last_name" required title="Please Enter Your Last Name">
+			</div>
+		</div>
+		
+		<div class="left_column">
+			<div class="email">
+				<h2>
+					<label for="email" class="required">E-mail:</label>
+
+				</h2>	
+					<input type="email" placeholder="you@domain.com" name="email" id="email" required>
+			</div>
+		</div>	
+		
+		<div class="right_column">
+			<div class="username">
+				<h2>
+					<label for="username">Username</label>
+				</h2>
+
+				<input type="text" id="username" name="username"/>	
+			</div>	
+		</div>
+		
+		<div class="left column">	
+			<div class="password">
+				<h2>
+					<label for="password" class="required">Password:</label>
+				</h2>
+
+					<input type="password" name="password" id="password" required>
+
+			</div>	
+		</div>
+		
+		<div class="right_column">	
+			<div class="password"> 
+				<h2>
+					<label for="conf_password" class="required">Confirm password:</label>
+				</h2>
+					<input type="password" name="conf_password" id="conf_password" required>
+			</div>	
+		</div>
+
+
+
+		<h2>What is your favorite color?</h2>
+		  
+			<form id="favorite_color" action="/pick_color" method="post">
+			
+			<input type="radio" name="pick_color" value="chartreuse" id="chartreuse">
+
+			<label for="chartreuse">Chartreuse</label><br>
+
+			<input type="radio" name="pick_color" value="red" id="red">
+			<label for="red">Red</label><br>
+
+			<input type="radio" name="pick_color" value="blue" id="blue">
+			<label for="blue">Blue</label><br>
+
+			<input type="radio" name="pick_color" value="purple" id="purple">
+			<label for="Purple">Purple</label><br>
+
+		<input id="submit" type="submit" value="submit"/>	
+	
+
+		<h2> <a href="#" onclick= alert("Warning: Clearing This Form Will Remove All Data You Have Entered");--> <a href="#" onclick= document.getElementById("create_account").reset();>CLEAR FORM</a> </h2>
+	
+		</form>	
+
+		</p>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script>
+	/*adding some styling/interactivity. black border on hover, background color change in input fields on focus.*/
+
+	jQuery('.required') .on('mouseover',function() {
+		jQuery(this).css('border', '1px solid black');
+	});
+
+	jQuery('h2') .on('mouseover',function(){
+		jQuery(this).css('outline', 'none');
+	});
+
+	jQuery('#first_name') .on('input:focus',function(){
+		jQuery(this).css('background-color', 'red');
+	});
+
+	/*testing the numeric value of each input field to determine if it meets requirements? This seems repetitive/redundant. How to streamline this code?*/
+	
+	
+
+
+	jQuery('#first_name').ready(function(){
+    
+        var txtVal = jQuery('#first_name').val();
+        if(txtVal.length >= 2)
+            target.className=pass;
+        else
+        {
+            if(jQuery.isNumeric(txtVal))
+                alert('Your first name cannot contain numbers. Please try again.');
+            else
+                alert('Your First name must be longer than two characters. Please try again.');
+        }
+    });
+});
+
+	jQuery('last_name').ready(function(){
+    
+        var txtVal = jQuery('#last_name').val();
+        if(txtVal.length >= 2)
+            target.className=pass;
+        else
+        {
+            if(jQuery.isNumeric(txtVal))
+                alert('Your last name cannot contain numbers. Please try again.');
+            else
+                alert('Your last name must be longer than two characters. Please try again.');
+        }
+    });
+});
+
+	jQuery('first_name').ready(function(){
+    
+        var txtVal = jQuery('#first_name').val();
+        if
+        {
+        	(txtVal.length <= 6)
+            target.className=fail;
+        	alert('Your username must be at least 7 characters. Please try again.');
+        };
+       
+        else
+        {
+            	target.className=pass});
+});
+
+/*getting the value of a selected radio button and using that information to change background color of the page */
+
+var favoriteColorInput= jQuery('input:radio[name=pick_color]:checked').val();
+//if the checked value of a radio input is equal to a color id choice (chartreuse, red, etc. then change the background color of the body to the specified color)
+if { 
+	favoriteColorInput='chartreuse'
+	jQuery('body').css('background-color', '#88D12E');
+	};
+
+else{
+	favoriteColorInput='red'
+	jQuery('body').css('background-color', '#D4171A');
+	};
+
+else{
+	favoriteColorInput='blue'
+	jQuery('body').css('background-color','#2705ED');
+};	
+
+else{ 
+	favorite_colorInput='purple'
+	jQuery('body').css('background-color', '#5DC291');
+
+};
+//if no radio input is checked/selected, alert the user with the following message.
+else {
+	jQuery('input:radio[name=pick_color]:checked')==false;
+	alert('You must select a favorite color in order to proceed.');
+
+}''
+
+
+
+
+/*textarea:focus, input:focus {
+  background-color:#FCE1A2;
+  border: 1px solid #000000;*/
+
+}
+
+	</script>
+
+
+	</article>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

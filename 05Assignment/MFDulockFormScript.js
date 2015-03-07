@@ -13,7 +13,7 @@ return true;
 }
 
 function isRequired(el) {
-	return ((typeof el.required ==='boolean') && el.required) || typeof el.required === 'string');
+	return ( (( typeof el.required ==='boolean') && el.required) || typeof el.required === 'string');
 }
 
 function isEmpty(el){
@@ -216,7 +216,7 @@ if (color_picked="chartreuse"){
 	};
 
 	else (color_picked="purple"){
-		document.body.style.backgroundColor="5DC291"
+		document.body.style.backgroundColor="#5DC291"
 	};
 
 /*
@@ -262,5 +262,47 @@ addEvent(form, 'submit',function(e)) {
 
 	document.write(first_name+"<br></br>"+last_name+"<br></br>"+email+"<br></br>"+username+"<br></br>"+password+"<br></br>")
 
+return false ;
 
 }
+
+
+// var form= getElementById('create_account')
+
+// form.addEventListener(submit, )
+
+//PASSWORD VERIFICATION TIPS FROM CLASS FEB 28:
+//attach single submit event to the form 
+
+/*Example:
+
+var ourForm = document.getElement();
+
+ourForm.addEventListener('submit', 'validate');
+
+function validate (){}
+//loop through all the elements
+// manually iterating over each elements
+
+//validate first name
+//function checkLength(string, length_to_check) {
+	
+	//functions can have return values
+
+	if (string.length >= length_to_check)
+
+	{return true;}
+
+	else {return false;}
+
+	var message
+
+	//message += 'Your last name is blank';
+	// alertArea.innerHTML = message;
+
+	there is a way to write code that allows you to check the length of multiple elements so you can reuse chunks of code rather than writing a separate function for each separate task
+	ß
+}
+
+//checkLength();
+
