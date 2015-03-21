@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="MFDulockResponsiveStyling.css"/>
 
 
-	<!--<script src="MFDulockFormScript.js"> -->
-	</script>
+	<!--<script src="MFDulockFormScript.js">
+</script>-->
 
 
 </head>
@@ -154,7 +154,7 @@
 		<input id="submit" type="submit" value="submit"/>	
 	
 
-		<h2> <a href="#" onclick= alert("Warning: Clearing This Form Will Remove All Data You Have Entered");--> <a href="#" onclick= document.getElementById("create_account").reset();>CLEAR FORM</a> </h2>
+		<h2> <a href="#" onclick= alert("Warning: Clearing This Form Will Remove All Data You Have Entered")</h2></a>; <a href="#" onclick= document.getElementById("create_account").reset();>CLEAR FORM</a> </h2>
 	
 		</form>	
 
@@ -217,7 +217,7 @@
         var txtVal = jQuery('#first_name').val();
         if
         {
-        	(txtVal.length <= 6)
+        	(txtVal.length <= 6);
             target.className=fail;
         	alert('Your username must be at least 7 characters. Please try again.');
         };

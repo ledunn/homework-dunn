@@ -1,0 +1,269 @@
+/*media query and screen size variables*/
+/*color and styling variables*/
+body {
+  background-image: url("images/blackLinen2X.png");
+  font-family: 'Open Sans', sans-serif, 'Josefin Slab', serif; }
+  body #logo {
+    width: 150px;
+    height: 150px;
+    opacity: .7; }
+    @media screen and (max-width: 800px) {
+      body #logo {
+        width: 30px;
+        height: 30px;
+        opacity: .7;
+        margin: 20px 20px 20px 20px; } }
+    @media screen and (max-width: 1350px) {
+      body #logo {
+        width: 100px;
+        height: 100px;
+        opacity: .7; } }
+    @media screen and (max-width: 2050px) {
+      body #logo {
+        width: 150px;
+        height: 150px;
+        opacity: .7; } }
+  body .nav_menu {
+    list-style-type: none;
+    display: inline;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    clear: both;
+    float: left;
+    position: fixed;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    line-height: 1.3em;
+    overflow: auto; }
+  body .nav_menu li {
+    padding: 10px;
+    font-size: 2em;
+    line-height: 1.6em; }
+    @media screen and (max-width: 800px) {
+      body .nav_menu li {
+        font-size: .8em;
+        color: red;
+        /*CHANGE THIS LATER, FONT COLOR ADDED TO MEDIA QUERY TO TEST IF IT IS WORKING*/ } }
+    @media screen and (max-width: 1350px) {
+      body .nav_menu li {
+        font-size: 1em; } }
+    @media screen and (max-width: 2050px) {
+      body .nav_menu li {
+        font-size: 1.1em; } }
+    body .nav_menu li .social_media {
+      list-style-type: none;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      float: left;
+      position: relative;
+      overflow: auto;
+      margin-top: 500px;
+      padding: 5px 5px 5px 5px; }
+    body .nav_menu li .social_media li.hover {
+      -webkit-transform: scale(1.5) rotate(-10deg);
+      -moz-transform: scale(1.5) rotate(-10deg);
+      -o-transform: scale(1.5) rotate(-10deg);
+      transform: scale(1.5) rotate(-10deg); }
+    body .nav_menu li img {
+      width: 25px;
+      height: 25px; }
+
+.BlogMainText {
+  width: 70%;
+  height: 50%;
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  clear: both;
+  position: relative;
+  float: right;
+  background-color: #b6a399;
+  box-shadow: none;
+  overflow: auto; }
+
+@media screen and (max-width: 800px) {
+  width: 80%;
+  height: 50%;
+  color: red; }
+.BlogArticleImage {
+  width: 60%;
+  height: 40%;
+  clear: both;
+  float: right;
+  position: relative;
+  overflow: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px; }
+
+.BlogMainText:hover {
+  box-shadow: 1px 1px 1px #1c0a06, 2px 2px 2px #1c0a06, 3px 3px 3px #1c0a06;
+  -webkit-transform: translateX(-3px) 0.6s ease;
+  -moz-transform: translateX(-3px) 0.6s ease;
+  -o-transform: translateX(-3px) 0.6s ease;
+  transform: translateX(-3px) 0.6s ease; }
+
+/*@mixin grow_and_rotate {
+	-webkit-transform:scale(1.5) rotate(-10deg);
+	-moz-transform:scale(1.5) rotate(-10deg);
+	-o-transform:scale(1.5) rotate(-10deg);
+	transform:scale(1.5) rotate(-10deg);}
+
+
+.social_media {
+  li {
+	width: 30px;
+	height: 30px;
+	list-style-type: none;
+	display: inline;
+	float: left;
+	//		position:absolute;
+	overflow: auto;
+	//		margin-top:500px;
+	//  	margin-left:30px;
+	//		margin-right:40px;
+	padding: 5px 5px 5px 5px;
+
+
+  		}
+  li.hover{
+	@include grow_and_rotate;
+//	-webkit-transition: all .5s;
+//	-moz-transition: all .5s ease;
+//	-o-transition: all .5s ease;
+//	transition: all .5s ease;
+  }*/
+img {
+  width: 25px;
+  height: 25px; }
+
+article {
+  float: left;
+  background-color: #b6a399;
+  opacity: .8;
+  font-size: .9em;
+  color: #000000;
+  text-align: left;
+  line-height: 1.5em;
+  width: 80%;
+  height: 80%;
+  margin-left: 40px;
+  padding: 10px 10px 10px 10px; }
+
+p {
+  margin-top: 10px;
+  padding-top: 25px; }
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Josefin Slab', serif;
+  font-size: 3.5em;
+  line-height: .5em;
+  margin-left: 25%;
+  margin-bottom: 0px;
+  padding: 5px; }
+
+h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 2em;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: #70110d;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  float: left;
+  -webkit-transition: color .6s ease;
+  -moz-transition: color .6s ease;
+  -o-transition: color .6s ease;
+  -transition: color .6s ease;
+  list-style-type: none; }
+
+h3 {
+  text-align: right;
+  clear: both;
+  float: right;
+  position: relative;
+  color: #FFFFFF;
+  margin: 15px 15px 15px 15px;
+  padding: 20px 20px 20px 20px;
+  font-size: .9em; }
+  @media screen and (max-width: 800px) {
+    h3 {
+      font-size: .6em; } }
+  @media screen and (max-width: 1350px) {
+    h3 {
+      font-size: .8em; } }
+
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease; }
+
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+a:hover {
+  -webkit-transition: color .6s ease;
+  -moz-transition: color .6s ease;
+  -o-transition: color .6s ease;
+  transition: color .6s ease;
+  color: #D17634; }
+
+a:active {
+  color: #D17634; }
+
+.selected_link {
+  text-decoration: none;
+  color: #000000; }
+
+/*#Blog_Archive_Link{
+  font-size:.8em;
+  color:$default_color;
+  text-align:left;
+  clear:both;
+  margin:50px 50px 100px 50px;
+}
+*/
+/*Styling for form fields, Assignment 05*/
+textarea:hover, input:hover {
+  border: 1px solid #000000; }
+
+textarea:focus, input:focus {
+  background-color: #FCE1A2;
+  border: 1px solid #000000; }
+
+input:invalid + label::after {
+  border: 1px solid red; }
+
+#create_account_header {
+  font-family: 'Josefin Slab';
+  font-size: 4em;
+  color: #FFFFFF; }
+
+/*.left_column{
+  float:left;
+  text-align:left;
+  margin:10px 10px 10px 10px;
+  padding:20px 20px 20px 20px;
+}
+
+.right_column{
+  float:right;
+  text-align:left;
+  margin:10px 10px 10px 10px;
+  padding:20px 20px 20px 20px;
+
+}
+*/
+
+/*# sourceMappingURL=MFDulockResponsiveStyling.css.map */
