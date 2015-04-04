@@ -30,7 +30,7 @@
  	 </p>
 
   	<p>
-  		<label for="include_summaries">Include summaries?</label> <input type="checkbox" id="include_summaries" value="" />
+  		<label for="include_summaries">Include summaries?</label> <input type="checkbox" id="include_summaries" value="true" />
   	</p>
 
 	<input type="submit" name="submit" id="submit" value="Show feed!" />
@@ -67,14 +67,25 @@ $('#rss_reader').on( 'submit', function (event) {
 $('#rss_reader').on('click', function(event) {
     event.preventDefault();
 
+//Get feed for homepage?
     $.ajax({
     	url:'feeds/HomePage.xml',
     	dataType:'xml',
-    	type:'GET',
+    	type:'POST',
     	success:function(xml){
 
     		var HomePage=$(this).find("#HomePage").html();
     	};
+
+//Get feed for United States??
+      $.ajax({
+      url:'feeds/US.xml',
+      dataType:'xml',
+      type:'POST',
+      success:function(xml){
+
+        var HomePage=$(this).find("#UnitedStates").html();
+      };
 
     	error:function() {
     		alert("I am sorry, the feed you want is not available.")
