@@ -7,35 +7,72 @@
 	<title>
 		neighborhoood.pictures
 	</title>	
-	
+
+
+<!--CSS stylesheet for the Application-->
 	<link rel="stylesheet" type="text/css" href="PhotoMapAppStylings.css">
 
 
-	<!--jQuery Map Marker Plugin 1.0.0 files start here-->
-
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
-		</script>
-		
-		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-		<script type="text/javascript" src="jQuery.mapmarker-master/mapmarker.jquery.js"></script>
-<!--import google font-->
+<!--import Google font-->
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>	
+
+<!--FANCYBOX PLUG IN INFO-->
+
+
+<!--
+
+Lightbox image gallery
+
+-->
+
+
+<!--  <style type="text/css">
+        body {
+            font-family: Helvetica ;
+            line-height: 1.5em ;
+        }
+    </style>-->
+
+    <!-- link to fancybox CSS file -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+
+<!-- jQuery library via Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- fancybox plugin installed locally -->
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.fancybox').fancybox ({
+            'nextEffect': 'none',
+            'prevEffect': 'none'
+        });
+    });
+</script>
+
+
+<script type="text/javascript" src="js/jquery.fancybox.pack.js">
+
+</script>
+
+
+
+<!--FANCYBOX FILES END HERE-->
 
 	<!--Use link below if you need to look up latitude and longitude coordinates:
 
 	http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude.php-->
 
-<!-- important infor for later <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+<!-- important info for later <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
 -->
 
-	<!--jQuery Map Marker Plugin files end here-->
 
-</head>
-
-
-<body>
 	<h1>
 		neighborhood.pictures
 	</h1>	
@@ -47,80 +84,106 @@
  -->
 <h2> 
 
-<div id="phototoggle">	
-<a href="PhotoMapAppFinalProjectMapView.index.html">map view</a>| <a href ="PhotoMapAppFinalProjectPhotoGridView.index.html">photo view</a>
-</div>
+	<div id="toggleview">	
+		<a href="PhotoMapAppFinalProjectMapView.index.html">map view</a>| <a href ="PhotoMapAppFinalProjectPhotoGridView.index.html">photo view</a>
+	</div>
+
 </h2>
 
-<!-- 
-	<div id="map">
 
- 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47155.524110797895!2d-71.1130176143554!3d42.380454168062975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377297bf5e165%3A0x7a907799d8f97b03!2sSomerville%2C+MA!5e0!3m2!1sen!2sus!4v1427326728383" width="500px" height="500px" frameborder="10" style="border:20"> </iframe>
-		
-
-	</div> -->
+<h2>
+		<a href="PhotoMapAppFinalProjectPhotoIndex.html">Photo Index</a> 
+</h2>	
 
 
 	<div class="photogrid">
 	<ul>
 
 
-
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg" alt="3 Packard Avenue Somerville April 24 1956"> 
-		</li>
 		
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg" alt="3 Park St Somerville July 9 1968">
-		</li>
-		
+		<div class="1950s">
 
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" alt="6 Beacon Street Somerville April 22 1954">
-		</li>
-		
+			<li>
 
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" alt="8 Richdale Avenue Somerville May 17 1961">
-		</li>
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 3 Packard Avenue, Somerville, Massachusetts"> <img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg"/></a>
 		
+			</li>
 
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" alt="9 Hudson Street Somerville August 27 1956">
-		</li>
+
+			<li> 
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" class="fancybox" rel="gallery" title="April 22 1954 <br> 6 Beacon Street Somerville, Massachusetts"><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" alt="6 Beacon Street Somerville April 22 1954">
+			</li>
+
+			<li> 
+
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" class="fancybox" rel="gallery" title="August 27 1956 <br> 9 Hudson Street Somerville Massachusetts">
+				<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" alt="9 Hudson Street Somerville August 27 1956">
+			</li>
 		
 
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg" alt="14 Austin Street Somerville June 14 1978">
-		</li>
+		</div>	
+
+
+
+		<!--1960s Photos ------------------------------------>
 		
 
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" alt="15 Mystic Avenue Somerville January 29 1968">
+		<div class="1960s">	
+			
+			<li>
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg" class="fancybox" rel="gallery" title="3 Park St Somerville July 9 1968 <br> Somerville, Massachusetts"> <img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg" alt="3 Park St Somerville July 9 1968"/></a>
 
-		 </li> 
+			</li>
 
-		 <li>
-		 	<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/16-18LandersStreetSomervilleSeptember221974.jpg" alt="16 to 18 Landers Street September 22 1974">
-		 </li>	
+
+			<li> 
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg " class="fancybox" rel="gallery" title="8 Richdale Avenue <br> Somerville, Massachusetts"> <img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" alt="8 Richdale Avenue Somerville May 17 1961">
+			</li>
+
+
+			<li> 
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" class="fancybox" rel="gallery" title="January 29 1968 <br> 15 Mystic Avenue Somerville Massachusetts "><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" alt="15 Mystic Avenue Somerville January 29 1968">
+
+		 	</li> 
+
+
+		 	<li> 
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/19DellStSomervilleFebruary151968.jpg" class="fancybox" rel="gallery" title="February 15 1968 <br> 19 Dell Street Somerville, Massachusetts"><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/19DellStSomervilleFebruary151968.jpg" alt="19 Dell Street Somerville February 15 1968">
+
+			</li>
 		
 
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/18GrantStreetSomervilleFebruary51977.jpg" alt="18 Grant Street Somerville February 5 1977">
+			<li> 
+				<a href="" class="fancybox" rel="gallery" title="April 29 1968 <br> 24 College Avenue Somerville, Massachusetts"><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/24CollegeAvenueSomervilleApril291968.jpg" alt="24 College Avenue Somerville April 29 1968">
 
-		 </li>
+			</li>
+
+		</div>
+
+
+		<!--1970s photos below ---------->
+
+		<div class="1970s">
+			
+
+			<li> 
+				<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg" alt="14 Austin Street Somerville June 14 1978">
+			</li>
+
+
+			<li>
+		 		<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/16-18LandersStreetSomervilleSeptember221974.jpg" alt="16 to 18 Landers Street September 22 1974">
+			</li>	
+		
+			<li> 
+				<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/18GrantStreetSomervilleFebruary51977.jpg" alt="18 Grant Street Somerville February 5 1977">
+
+			 </li>
 		
 
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/19DellStSomervilleFebruary151968.jpg" alt="19 Dell Street Somerville February 15 1968">
+		</div>
 
-		</li>
-		
-
-		<li> 
-			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/24CollegeAvenueSomervilleApril291968.jpg" alt="24 College Avenue Somerville April 29 1968">
-
-		</li>
+	
 		<!--repeat selection of photos to test photo thumbnail grid, change to all different photos later-->
 		<li> 
 			<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/24CrossStSomervilleMarch201968.jpg" alt="24 Cross St Somerville March 20 1968"> 
