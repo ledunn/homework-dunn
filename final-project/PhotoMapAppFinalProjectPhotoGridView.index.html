@@ -41,6 +41,8 @@ Lightbox image gallery
 
 <body>
 
+<div id="content">	
+
 
 <!-- jQuery library via Google CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -60,10 +62,50 @@ Lightbox image gallery
 <script type="text/javascript" src="js/jquery.fancybox.pack.js">
 
 </script>
+<!---FANCYBOX FILES END HERE-->
+<script type="text/javascript" src="photos.json">
+
+
+$(document).ready(function ( event ) {
+    /*event.preventDefault( ) ;*/
+
+    $.getJSON( 'photos.json', "", function ( response ) {
+        var items = '' ;
 
 
 
-<!--FANCYBOX FILES END HERE-->
+        // Loop through the set of elements in the JSON file.
+        $.each ( response, function(filename, date, street, city, state, latitude, longitude) {
+            // Add each element to the items string, and add some HTML formatting along the way.
+            console.log(items)
+
+
+            /*items += '<p>' + '<strong>' + filename + '</strong>: ' + street + city + state '</p>';
+        });*/
+
+        // Set the content of the #content div to the items.
+        $('#content').html ( items ) ;
+    });
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
 
 	<!--Use link below if you need to look up latitude and longitude coordinates:
 
@@ -154,7 +196,7 @@ Lightbox image gallery
 		
 
 			<li> 
-				<a href="" class="fancybox" rel="gallery" title="April 29 1968 <br> 24 College Avenue Somerville, Massachusetts"><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/24CollegeAvenueSomervilleApril291968.jpg" alt="24 College Avenue Somerville April 29 1968">
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/24CollegeAvenueSomervilleApril291968.jpg" class="fancybox" rel="gallery" title="April 29 1968 <br> 24 College Avenue Somerville, Massachusetts"><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/24CollegeAvenueSomervilleApril291968.jpg" alt="24 College Avenue Somerville April 29 1968">
 
 			</li>
 
@@ -1296,6 +1338,9 @@ Lightbox image gallery
 // });
 
 // </script>
+
+</div>
+
 
 </body>
 

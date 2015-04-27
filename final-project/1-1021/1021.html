@@ -76,7 +76,7 @@ NOTE: this demo requires internet connectivity and must be viewed through http a
                     var map = new google.maps.Map(document.getElementById('map-canvas'),
                             mapOptions);
 
-                    var window_content = "<h2>Info Window</h2><p>Lat + Long: " + 42.3385994, -71.0968474/*lat_lng_position.toString() +*/ ".</p><img src='smfa-thumb.jpg' width='150' height='113' />" ;
+                    var window_content = "<h2>Info Window</h2><p>Lat + Long: " + lat_lng_position.toString() + ".</p><img src='smfa-thumb.jpg' width='150' height='113' />" ;
                     var infowindow = new google.maps.InfoWindow({
                         content: window_content
                     });
@@ -84,7 +84,7 @@ NOTE: this demo requires internet connectivity and must be viewed through http a
                     // Let's also draw a marker.
                     var marker = new google.maps.Marker({
                         map: map,
-                        position: 42.3385994, -71.0968474,
+                        position: lat_lng_position,
                         icon: "marker.png"
                     });
 
