@@ -1,5 +1,6 @@
 {
   "photos":
+  
   [
 
     {
@@ -9,7 +10,8 @@
       "city": "Somerville",
       "state":"Massachusetts",
       "latitude": "42.402391",
-      "longitude": "-71.124863"
+      "longitude": "-71.124863",
+      "href": "MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg"
     },
 
     {
@@ -19,7 +21,9 @@
       "city": "Somerville",
       "state": "Massachusetts",
       "latitude": "42.383144",
-      "longitude": "-71.088855"
+      "longitude": "-71.088855",
+      "href": "MapAppPhotos/SomervilleArchivesTumblr/19DellStSomervilleFebruary151968.jpg"
+
     },
 
     {
@@ -29,7 +33,46 @@
       "city": "Somerville",
       "state": "Massachusetts",
       "latitude":"42.388798",
-      "longitude":"-71.097899"
+      "longitude":"-71.097899",
+      "href": "MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg"
+
+    },
+
+    
+    {
+      "filename": "15MysticAvenueSomervilleJanuary291968.jpg",
+      "date": "January 29, 1968",
+      "street": "15 Mystic Avenue",
+      "city": "Somerville",
+      "state":"Massachusetts",
+      "latitude": "42.402391",
+      "longitude": "-71.124863",
+      "href": "MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg"
+
+    },
+
+    {
+      "filename": "19DellStSomervilleFebruary151968.jpg",
+      "date": "February 15, 1968",
+      "street": "Dell Street",
+      "city": "Somerville",
+      "state": "Massachusetts",
+      "latitude": "42.383144",
+      "longitude": "-71.088855",
+      "href": "MapAppPhotos/SomervilleArchivesTumblr/19DellStSomervilleFebruary151968.jpg"
+
+    },
+
+    {
+      "filename": "8RichdaleAvenueSomervilleMay171961.jpg",
+      "date": "May 17, 1961",
+      "street": "8 Richdale Avenue",
+      "city": "Somerville",
+      "state": "Massachusetts",
+      "latitude":"42.388798",
+      "longitude":"-71.097899",
+      "href": "MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg"
+
     }
 
   ]

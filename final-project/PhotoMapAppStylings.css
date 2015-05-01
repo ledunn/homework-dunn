@@ -1,5 +1,7 @@
 /* Generate a 960px grid, with 12 columns and 30px gutter */
 
+
+
 body {
    background: url(http://griddle.it/960-12-30) repeat-y center top ;
     background-color: #ffffff;
@@ -31,13 +33,13 @@ ul {
     margin-left: 8% ;
 }*/
 
-img {
+/*img {
     height: 120px ;
     width: 150px ;
     margin: 1px ;
     float: left ;
    opacity: 1;
-}
+}*/
 
 .fadein:hover{
 	opacity: .7;
@@ -129,6 +131,25 @@ line-height: 1.1em;
     line-height: 1.4em;
 
 }
+
+#content{
+    width:900px;
+    margin-left:200px;
+    margin-right:200px;
+    padding:5px;
+    float:left;
+    border:solid black 10px;
+
+}
+
+#content img{
+    width:40px;
+    padding:3px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*.red{background-color:red;}*/
 
 
 /*Created classes for filtering by photo content (ex: by decade photo was taken) and styling*/

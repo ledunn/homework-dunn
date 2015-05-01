@@ -1,15 +1,25 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
+ 
 <html>
+
+
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Photos Prototype</title>
+
+    <link rel="stylesheet" type="text/css" href="PhotoMapAppStylings.css">
+
+           
 </head>
+
+
 <body>
 
-<div id="content"></div>
-
+<div id="content">
+</div>
 <!-- jQuery library via Google CDN -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
 
 <script type="text/javascript" >
 
@@ -23,13 +33,15 @@
             var photos = response.photos ;
 
             // Create a variable to store the photo attributes nicely wrapped in HTML
-            var photos_html = '' ;
+            
+            var photos_html = '';
 
             // Loop through the array of objects, extracting the values from the properties defined in photos.json file.
             for ( var photo = 0 ;  photo < photos.length ; photo++ ) {
                 var filename = photos[photo].filename ;
                 var street = photos[photo].street ;
                 var date = photos[photo].date ;
+                var photos_link= photos[photo].href;
                 // more properties, etc.
 
                 var img_folder = 'MapAppPhotos/SomervilleArchivesTumblr/' ;
@@ -39,23 +51,57 @@
 
                 // We use the append operator (+=) to add to the current value of
                 // whatever photos_html is already assigned to.
-                photos_html += '<img width="300" src="' + img_path + '" />';
+               
+
+
+                // $(photos_html).html('<a href=' +'>' + '<img src=' + photos_link + '/>'+'</a>');
+
+
+
+                
+                // photos_html += '<img src="' + img_path + '" />';
+               
                 // Don't forget to add some CSS classes and styles, too!
-                photos_html += '<p>' + street + ' ' + '(' + date + ')' +'</p>';
+    
+                 $('#content').html(photos_html);
 
-            }
 
-//            console.log ( photos ) ;
-//            console.log ( photos_html ) ;
+               // var photos_caption =  street + ' ' + date ;
+
+               // $(img_path).attr('href',img_path);
+
+               console.log(photos_link);
+ 
+          
+
+        };
+
+      // };
+
+    });  
+
+
+
+    
+
+           // console.log(photos_caption);
+           // console.log ( photos ) ;
+          // console.log ( photos_html ) ;
+
+
+
+
 
 
             // Populate the #content div with the photos HTML.
             // Grid view will easy. The map view will be a little trickier. :-)
-            $('#content').html ( photos_html ) ;
-        });
-    });
+               
+
+
 
 </script>
+
+
 
 </body>
 </html>
