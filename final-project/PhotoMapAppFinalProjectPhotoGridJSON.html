@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+
+
+
+<head>
+	<title>
+		neighborhoood.pictures
+	</title>	
+
+
+<!--CSS stylesheet for the Application-->
+	<link rel="stylesheet" type="text/css" href="PhotoMapAppStylings.css">
+
+
+<!--import Google font-->
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>	
+
+<!--FANCYBOX PLUG IN INFO ( Lightbox image gallery) 
+
+-->
+<!-- link to fancybox CSS file -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+<div id="content">	
+
+
+<!-- jQuery library via Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- fancybox plugin installed locally -->
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.fancybox').fancybox ({
+            'nextEffect': 'none',
+            'prevEffect': 'none'
+        });
+    });
+</script>
+
+
+
+<!---FANCYBOX FILES END HERE
+////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+        $.getJSON( 'photos.json', "", function ( response ) {
+
+            // Store the contents of the 'photos' object in a variable.
+            // The variable, of course, contains a numerically-indexed array of
+            // objects, per photos.json.
+            var photos = response.photos ;
+
+            // Create a variable to store the photo attributes nicely wrapped in HTML
+            var photos_html = '' ;
+
+            // Loop through the array of objects, extracting the values from the properties defined in photos.json file.
+            for ( var photo = 0 ;  photo < photos.length ; photo++ ) {
+                var filename = photos[photo].filename ;
+                var street = photos[photo].street ;
+                var date = photos[photo].date ;
+                var photos_link= photos[photo].href;
+                // more properties, etc.
+
+                var img_folder = 'MapAppPhotos/SomervilleArchivesTumblr/' ;
+
+                var img_path = img_folder + filename ;
+
+
+                // We use the append operator (+=) to add to the current value of
+                // whatever photos_html is already assigned to.
+                photos_html += '<img src="' + img_path + '" />';
+                // Don't forget to add some CSS classes and styles, too!
+                photos_html += '<p>' + street + ' ' + '(' + date + ')' +'</p>';
+
+            }
+
+//            console.log ( photos ) ;
+//            console.log ( photos_html ) ;
+
+
+            // Populate the #content div with the photos HTML.
+            // Grid view will easy. The map view will be a little trickier. :-)
+          
+
+
+
+            $('#content').html ( photos_html ) ;
+
+ 			 $('#content').append('<a href=' +'<img src="' + photos_link +'" + />'+ '</a>');
+
+             console.log(img_path);
+
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+	<!--Use link below if you need to look up latitude and longitude coordinates:
+
+	http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude.php-->
+
+<!-- important info for later <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+-->
+
+
+	<h1>
+		neighborhood.pictures
+	</h1>	
+	
+<!-- 	<h2>
+		Connect With History in Your Neighborhood || See Historic Photos on a Present Day Map
+	</h2>	
+
+ -->
+<h2> 
+
+	<div id="toggleview">	
+		<a href="PhotoMapAppFinalProjectMapView.index.html">map view</a>| <a href ="PhotoMapAppFinalProjectPhotoGridView.index.html">photo view</a>
+	</div>
+
+</h2>
+
+
+<h2>
+	<a href="PhotoMapAppAboutPage.html">About</a>
+
+
+</h2>	
+
+<h2>
+		<a href="PhotoMapAppFinalProjectPhotoIndex.html">Photo Index</a> 
+</h2>	
+
+
+	<!-- <div class="photogrid">
+	<ul>
+
+
+		
+		<div class="1950s">
+
+			<li>
+
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 3 Packard Avenue, Somerville, Massachusetts"> <img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg"/></a>
+		
+			</li>
+
+
+			<li> 
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" class="fancybox" rel="gallery" title="April 22 1954 <br> 6 Beacon Street Somerville, Massachusetts"><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" alt="6 Beacon Street Somerville April 22 1954">
+			</li>
+
+			<li> 
+
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" class="fancybox" rel="gallery" title="August 27 1956 <br> 9 Hudson Street Somerville Massachusetts">
+				<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" alt="9 Hudson Street Somerville August 27 1956">
+			</li>
+		
+
+		</div>	
+
+
+		
+	</ul>	
+
+</div>	
+
+
+
+</div> -->
+
+
+</body>
+
+
+</html>

@@ -17,24 +17,10 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>	
 
-<!--FANCYBOX PLUG IN INFO-->
-
-
-<!--
-
-Lightbox image gallery
+<!--FANCYBOX PLUG IN INFO ( Lightbox image gallery) 
 
 -->
-
-
-<!--  <style type="text/css">
-        body {
-            font-family: Helvetica ;
-            line-height: 1.5em ;
-        }
-    </style>-->
-
-    <!-- link to fancybox CSS file -->
+<!-- link to fancybox CSS file -->
     <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 
 </head>
@@ -49,70 +35,56 @@ Lightbox image gallery
 
 <!-- fancybox plugin installed locally -->
 <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+// <script>
+//     $(document).ready(function(){
+//         $('.fancybox').fancybox ({
+//             'nextEffect': 'none',
+//             'prevEffect': 'none'
+//         });
+//     });
+// </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
 <script>
-    $(document).ready(function(){
-        $('.fancybox').fancybox ({
-            'nextEffect': 'none',
-            'prevEffect': 'none'
-        });
-    });
-</script>
-
-
-<script type="text/javascript" src="js/jquery.fancybox.pack.js">
-
-</script>
-<!---FANCYBOX FILES END HERE-->
-<script type="text/javascript" src="photos.json">
-
-
-$(document).ready(function ( event ) {
-    /*event.preventDefault( ) ;*/
-
-    $.getJSON( 'photos.json', "", function ( response ) {
-        var items = '' ;
-
-
-
-        // Loop through the set of elements in the JSON file.
-        $.each ( response, function(filename, date, street, city, state, latitude, longitude) {
-            // Add each element to the items string, and add some HTML formatting along the way.
-            console.log(items)
-
-
-            items += '<p>' + '<strong>' + filename + '</strong>: ' + street + city + state '</p>';
-        });
-
-        // Set the content of the #content div to the items.
-        $('#content').html ( items ) ;
+$(document).ready(function(){
+    $("#1950s_button").click(function(){
+        $(".1960s, .1970s").toggle(1000);
     });
 
-})
+
+
+    $("#1960s_button").click(function(){
+       $(".1950s, .1970s").toggle(1000);
+    });
+
+     $("#1970s_button").click(function(){
+       $(".1950s, .1960s").toggle(1000);
+    });
+
+      $("#All_Photos_button").click(function(){
+       $(".1950s, .1960s, .1970s").show(1000);
+    });
 
 
 
-
-
-
-
-
-
-
-
-
-
+});
 </script>
+</head>
+<body>
+
+
+<a href="#" id="1950s_button">1950s</a>
+<a href="#" id="1960s_button">1960s</a>
+<a href="#" id="1970s_button">1970s</a>
+<a href="#" id="All_Photos_button">All Photos</a>	
 
 
 
 
-
-	<!--Use link below if you need to look up latitude and longitude coordinates:
-
-	http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude.php-->
-
-<!-- important info for later <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
--->
+<!---FANCYBOX FILES END HERE
+////////////////////////////////////////////////////////////////////////////////////-->
 
 
 	<h1>
@@ -144,42 +116,59 @@ $(document).ready(function ( event ) {
 </h2>	
 
 
-	<!-- <div class="photogrid">
+	<div class="photogrid">
 	<ul>
 
-
 		
-		<div class="1950s">
 
 			<li>
 
-				<a href="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 3 Packard Avenue, Somerville, Massachusetts"> <img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg"/></a>
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 3 Packard Avenue, Somerville, Massachusetts"> <img class="fadein 1950s" src="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg"/></a>
+		
+			</li>
+
+
+
+			<li>
+
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg" class="fancybox" rel="gallery" title="July 9 1968 <br> 3 Park St, Somerville, Massachusetts"> 
+
+					<img class="fadein 1960s" src="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg"/>
+				</a>
 		
 			</li>
 
 
 			<li> 
-				<a href="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" class="fancybox" rel="gallery" title="April 22 1954 <br> 6 Beacon Street Somerville, Massachusetts"><img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" alt="6 Beacon Street Somerville April 22 1954">
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" class="fancybox" rel="gallery" title="April 22 1954 <br> 6 Beacon Street Somerville, Massachusetts">
+					<img class="fadein 1950s" src="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" alt="6 Beacon Street Somerville April 22 1954">
+				</a>	
 			</li>
+
+			<li> 
+
+				<a href="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" class="fancybox" rel="gallery" title="May 17 1961  9 Hudson Street Somerville Massachusetts">
+				<img class="fadein 1960s" src="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" alt="8 Richdale Avenue Somerville Massachusetts May 17 1961">
+			</li>
+
+
 
 			<li> 
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" class="fancybox" rel="gallery" title="August 27 1956 <br> 9 Hudson Street Somerville Massachusetts">
-				<img class="grow" src="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" alt="9 Hudson Street Somerville August 27 1956">
+				<img class="fadein 1950s" src="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" alt="9 Hudson Street Somerville August 27 1956">
 			</li>
-		
-
-		</div>	
+	
 
 
 		
 	</ul>	
 
-</div>	
+	
 
 
 
-</div> -->
+</div> 
 
 
 </body>

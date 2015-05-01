@@ -3,7 +3,7 @@
 
 
 body {
-   background: url(http://griddle.it/960-12-30) repeat-y center top ;
+   /*background: url(http://griddle.it/960-12-30) repeat-y center top ;*/
     background-color: #ffffff;
 
 
@@ -19,6 +19,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
+
 }
 
 ul {
@@ -33,19 +34,19 @@ ul {
     margin-left: 8% ;
 }*/
 
-/*img {
-    height: 120px ;
-    width: 150px ;
+img {
+    height: 150px ;
+    width: 180px ;
     margin: 1px ;
     float: left ;
-   opacity: 1;
-}*/
-
-.fadein:hover{
-	opacity: .7;
+   opacity: .8;
 }
 
-.grow:hover {
+.fadein:hover{
+	opacity: 1;
+}
+
+/*.grow:hover {
     opacity: .5;
     padding-top: 50px ;
     padding-right: 70px ;
@@ -54,8 +55,8 @@ ul {
 
     /*background-color: #555555 ;*/
 
-    position: relative ;
-	z-index: 2;
+  /*  position: relative ;
+	z-index: 2;*/
 
    /* -webkit-transition: -webkit-transform .3s ease-in ;
     -moz-transition: -moz-transform .3s ease-in ;
@@ -138,16 +139,10 @@ line-height: 1.1em;
     margin-right:200px;
     padding:5px;
     float:left;
-    border:solid black 10px;
+ 
 
 }
 
-#content img{
-    width:40px;
-    padding:3px;
-    margin-left:auto;
-    margin-right:auto;
-}
 
 /*.red{background-color:red;}*/
 
@@ -155,8 +150,18 @@ line-height: 1.1em;
 /*Created classes for filtering by photo content (ex: by decade photo was taken) and styling*/
 
 
-.1950s{}
 
-.1960s{}
 
-.1970s{}
+
+.1950s:hover{
+    opacity:1;
+}
+
+.1960s:hover{
+    opacity:1;
+
+}
+
+.1970s:hover{
+    opacity:1;
+}
