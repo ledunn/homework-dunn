@@ -44,17 +44,20 @@
 
    $(document).ready(function(){
     $("#1950s_button").click(function(){
-        $(".1940s, .1960s, .1970s").hide(1000);
+    	$(".1940s, .1950s, .1960s, .1970s").show(300);
+        $(".1940s, .1960s, .1970s").hide(800);
     }); 
 
 
 
     $("#1960s_button").click(function(){
-       $(".1940s, .1950s, .1970s").hide(1000);
+    	$(".1940s, .1950s, .1960s, .1970s").show(300);
+       $(".1940s, .1950s, .1970s").hide(800);
     });
 
      $("#1970s_button").click(function(){
-       $(".1940s, .1950s, .1960s").hide(1000);
+     	$(".1940s, .1950s, .1960s, .1970s").show(300);
+       $(".1940s, .1950s, .1960s").hide(800);
     });
 
       
@@ -63,9 +66,16 @@
        $(".1940s, .1950s, .1960s, .1970s").show(1000);
     });
 
+         $("#cars_button").click(function(){
+       
+       $(".1940s, .1950s, .1960s, .1970s").hide(300);
+       $(".cars").show(800);
+    });
+
 
        $("#1940s_button").click(function(){
-       $(".1950s, .1960s, .1970s").hide(1000);
+       	    $(".1940s, .1950s, .1960s, .1970s").show(300);
+		 $(".1950s, .1960s, .1970s").hide(800);
     });
 
 });
@@ -77,14 +87,7 @@
 
 <div id="content">	
 
-<!--Below are clickable links that allow filtering by decade with jQuery-->
 
-
-<a href="#" id="1940s_button">1940s</a>
-<a href="#" id="1950s_button">1950s</a>
-<a href="#" id="1960s_button">1960s</a>
-<a href="#" id="1970s_button">1970s</a>
-<a href="#" id="All_Photos_button">All Photos</a>	
 
 
 
@@ -93,7 +96,8 @@
 
 
 	<h1>
-		neighborhood.pictures
+	        <a href="PhotoMapAppFinalProjectMapView.index.html">neighborhood.pictures</a>
+
 	</h1>	
 	
 <!-- 	<h2>
@@ -111,14 +115,30 @@
 
 
 <h2>
-	<a href="PhotoMapAppAboutPage.html">About</a>
 
+	<div class="nav_bar_left">
+
+    <ul>
+    <li> <a href="PhotoMapAppAboutPage.html">About</a> </li>
+
+ <!--Below are clickable links that allow filtering by decade with jQuery-->
+
+
+    <li> <a href="#" id="1940s_button">1940s</a> </li>
+    <li> <a href="#" id="1950s_button">1950s</a> </li>
+    <li> <a href="#" id="1960s_button">1960s</a> </li>
+    <li> <a href="#" id="1970s_button">1970s</a> </li>
+    <li> <a href="#" id="All_Photos_button">All Photos</a> </li>
+    <li> <a href="#" id="cars_button">Cars</a> </li>
+    </ul>
+	
+	</div>
 
 </h2>	
 
-<h2>
+<!-- <h2>
 		<a href="PhotoMapAppFinalProjectPhotoIndex.html">Photo Index</a> 
-</h2>	
+</h2>	 -->
 
 
 	<div class="photogrid"> <!--- An enormous list of photos/image files-->
@@ -138,7 +158,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg" class="fancybox" rel="gallery" title="July 9 1968 <br> 3 Park St, Somerville, Massachusetts"> 
 
-					<img class="fadein 1960s" src="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg"/>
+					<img class="fadein 1960s cars" src="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg"/>
 				</a>
 		
 			</li>
@@ -153,7 +173,7 @@
 			<li> 
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" class="fancybox" rel="gallery" title="May 17 1961  <br> 8 Richdale Avenue Somerville Massachusetts">
-				<img class="fadein 1960s" src="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" alt="8 Richdale Avenue Somerville Massachusetts May 17 1961">
+				<img class="fadein 1960s cars" src="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" alt="8 Richdale Avenue Somerville Massachusetts May 17 1961">
 				</a>
 			</li>
 
@@ -170,7 +190,7 @@
 			<li> 
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg" class="fancybox" rel="gallery" title="June 14 1978 <br> 14 Austin Street Somerville Massachusetts">
-				<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg" alt="14 Austin Street Somerville June 14 1978">
+				<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg" alt="14 Austin Street Somerville June 14 1978">
 				</a>
 			</li>
 
@@ -178,14 +198,14 @@
 			<li> 
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" class="fancybox" rel="gallery" title="January 29 1968 <br> 15 Mystic Avenue Somerville Massachusetts">
-				<img class="fadein 1960s" src="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" alt="15 Mystic Avenue Somerville Massachusetts January 29 1968">
+				<img class="fadein 1960s cars" src="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" alt="15 Mystic Avenue Somerville Massachusetts January 29 1968">
 				</a>
 			</li>
 
 			<li> 
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/16-18LandersStreetSomervilleSeptember221974.jpg" class="fancybox" rel="gallery" title="June 14 1978 <br> 16-18 Landers St Somerville Massachusetts">
-				<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/16-18LandersStreetSomervilleSeptember221974.jpg" alt="16-18 Landers Street Somerville Massachusetts June 14 1974">
+				<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/16-18LandersStreetSomervilleSeptember221974.jpg" alt="16-18 Landers Street Somerville Massachusetts June 14 1974">
 				</a>
 			</li>
 
@@ -242,7 +262,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/25AuburnStSomervilleDecember11973.jpg" class="fancybox" rel="gallery" title="December 11 1973 <br> 25 Auburn Street Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/25AuburnStSomervilleDecember11973.jpg" alt="25 Auburn St Somerville Massachusetts December 11 1973">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/25AuburnStSomervilleDecember11973.jpg" alt="25 Auburn St Somerville Massachusetts December 11 1973">
 
 				</a>
 
@@ -272,7 +292,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/33WardStSomervilleApril31967.jpg" class="fancybox" rel="gallery" title="April 3 1967 <br> 33 Ward Street,Somerville Massachusetts">
 
-					<img class="fadein 1960s" src="MapAppPhotos/SomervilleArchivesTumblr/33WardStSomervilleApril31967.jpg" alt="30 Richdale Avenue Somerville Massachusetts April 13 1967">
+					<img class="fadein 1960s cars" src="MapAppPhotos/SomervilleArchivesTumblr/33WardStSomervilleApril31967.jpg" alt="30 Richdale Avenue Somerville Massachusetts April 13 1967">
 
 				</a>
 
@@ -313,7 +333,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleDecember101978.jpg" class="fancybox" rel="gallery" title="December 10 1978 <br> 45 Elm Street, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleDecember101978.jpg" alt="45 Elm Street Somerville Massachusetts December 10 1978">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleDecember101978.jpg" alt="45 Elm Street Somerville Massachusetts December 10 1978">
 
 				</a>
 
@@ -323,7 +343,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleDecember101978_image2.jpg" class="fancybox" rel="gallery" title="Image 2 <br> December 10 1978 <br> 45 Elm Street, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleDecember101978_image2.jpg" alt="Image 2, 45 Elm Street Somerville Massachusetts December 10 1978">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleDecember101978_image2.jpg" alt="Image 2, 45 Elm Street Somerville Massachusetts December 10 1978">
 
 				</a>
 
@@ -333,7 +353,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleMay51976.jpg" class="fancybox" rel="gallery" title="May 5 1976 <br> 45 Elm Street, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleMay51976.jpg" alt="45 Elm Street Somerville Massachusetts May 5 1976">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/45ElmStSomervilleMay51976.jpg" alt="45 Elm Street Somerville Massachusetts May 5 1976">
 
 				</a>
 
@@ -383,7 +403,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/64WallaceStreetSomervilleDecember11973.jpg" class="fancybox" rel="gallery" title="December 1 1973 <br> 64 Wallace Street, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/64WallaceStreetSomervilleDecember11973.jpg" alt="64  Wallace Street Somerville Massachusetts December 1 1973">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/64WallaceStreetSomervilleDecember11973.jpg" alt="64  Wallace Street Somerville Massachusetts December 1 1973">
 
 				</a>
 
@@ -404,7 +424,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/70CrossStreetSomervilleNovember201968.jpg" class="fancybox" rel="gallery" title="November 20 1968 <br> 70 Cross Street, Somerville Massachusetts">
 
-					<img class="fadein 1960s" src="MapAppPhotos/SomervilleArchivesTumblr/70CrossStreetSomervilleNovember201968.jpg" alt="70 Cross Street Somerville Massachusetts Novembe 20 1968">
+					<img class="fadein 1960s cars" src="MapAppPhotos/SomervilleArchivesTumblr/70CrossStreetSomervilleNovember201968.jpg" alt="70 Cross Street Somerville Massachusetts Novembe 20 1968">
 
 				</a>
 
@@ -424,7 +444,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/72ProspectStSomervilleMay191953.jpg" class="fancybox" rel="gallery" title="May 19 1953 <br> 72 Prospect St Street, Somerville Massachusetts">
 
-					<img class="fadein 1950s" src="MapAppPhotos/SomervilleArchivesTumblr/72ProspectStSomervilleMay191953.jpg" alt="72 Prospect Street Somerville Massachusetts May 19 1953">
+					<img class="fadein 1950s cars" src="MapAppPhotos/SomervilleArchivesTumblr/72ProspectStSomervilleMay191953.jpg" alt="72 Prospect Street Somerville Massachusetts May 19 1953">
 
 				</a>
 
@@ -434,7 +454,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/73BroadwaySomervilleMay71953.jpg" class="fancybox" rel="gallery" title="May 19 1953 <br> 73 Broadway, Somerville Massachusetts">
 
-					<img class="fadein 1950s" src="MapAppPhotos/SomervilleArchivesTumblr/73BroadwaySomervilleMay71953.jpg" alt="73 Broadway Somerville Massachusetts May 7 1953">
+					<img class="fadein 1950s cars" src="MapAppPhotos/SomervilleArchivesTumblr/73BroadwaySomervilleMay71953.jpg" alt="73 Broadway Somerville Massachusetts May 7 1953">
 
 				</a>
 
@@ -497,7 +517,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/104BaileyRoadSomervilleOctober41955.jpg" class="fancybox" rel="gallery" title="October 4 1955 <br> 104 Bailey Road, Somerville Massachusetts">
 
-					<img class="fadein 1950s" src="MapAppPhotos/SomervilleArchivesTumblr/104BaileyRoadSomervilleOctober41955.jpg" alt="104 Bailey Road Somerville Massachusetts October 4 1955">
+					<img class="fadein 1950s cars" src="MapAppPhotos/SomervilleArchivesTumblr/104BaileyRoadSomervilleOctober41955.jpg" alt="104 Bailey Road Somerville Massachusetts October 4 1955">
 
 				</a>
 
@@ -537,7 +557,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/162HighlandAveSomervilleApril251977.jpg" class="fancybox" rel="gallery" title="April 25 1977 <br> 162 Highland Avenue, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/162HighlandAveSomervilleApril251977.jpg" alt="162 Highland Ave Somerville Massachusetts April 25 1977">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/162HighlandAveSomervilleApril251977.jpg" alt="162 Highland Ave Somerville Massachusetts April 25 1977">
 
 				</a>
 
@@ -547,7 +567,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/217CedarStreetSomervilleAugust81973.jpg" class="fancybox" rel="gallery" title="August 8 1973 <br> 217 Cedar Street, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/217CedarStreetSomervilleAugust81973.jpg" alt="217 Cedar Street Somerville August 8 1973">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/217CedarStreetSomervilleAugust81973.jpg" alt="217 Cedar Street Somerville August 8 1973">
 
 				</a>
 
@@ -557,7 +577,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/230HighlandAvenueSomervilleAugust131976.jpg" class="fancybox" rel="gallery" title="August 13 1976 <br> 230 Highland Avenue, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/230HighlandAvenueSomervilleAugust131976.jpg" alt="230 Highland Avenue Somerville August 13 1976">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/230HighlandAvenueSomervilleAugust131976.jpg" alt="230 Highland Avenue Somerville August 13 1976">
 
 				</a>
 
@@ -802,7 +822,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/BroadwayAtWalkerSomervilleJanuary41955.jpg" class="fancybox" rel="gallery" title="January 4 1955 <br> Broadway at Walker, Somerville Massachusetts">
 
-					<img class="fadein 1950s" src="MapAppPhotos/SomervilleArchivesTumblr/BroadwayAtWalkerSomervilleJanuary41955.jpg" alt="Broadway at Walker, Somerville Massachusetts January 4 1955">
+					<img class="fadein 1950s cars" src="MapAppPhotos/SomervilleArchivesTumblr/BroadwayAtWalkerSomervilleJanuary41955.jpg" alt="Broadway at Walker, Somerville Massachusetts January 4 1955">
 
 				</a>
 
@@ -980,7 +1000,7 @@
 
 				<a href="MapAppPhotos/SomervilleArchivesTumblr/LowellandRichardsonStSomervilleSeptember31976.jpg" class="fancybox" rel="gallery" title="September 3 1976 <br> Lowell and Richardson Street, Somerville Massachusetts">
 
-					<img class="fadein 1970s" src="MapAppPhotos/SomervilleArchivesTumblr/LowellandRichardsonStSomervilleSeptember31976.jpg" alt="Lowell and Richardson Street, Somerville Massachusetts September 3 1976">
+					<img class="fadein 1970s cars" src="MapAppPhotos/SomervilleArchivesTumblr/LowellandRichardsonStSomervilleSeptember31976.jpg" alt="Lowell and Richardson Street, Somerville Massachusetts September 3 1976">
 
 				</a>
 
@@ -999,7 +1019,7 @@
 
 	</ul>	
 
-	
+	</div>
 
 
 

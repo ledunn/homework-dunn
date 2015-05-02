@@ -3,23 +3,22 @@
 
 
 body {
-    background: url(http://griddle.it/960-12-30) repeat-y center top ;
-    background-color: #ffffff;
-
-
-
-  /* #D1E0E0; */
-
-    
+/*    background: url(http://griddle.it/960-12-30) repeat-y center top ;
+*/    background-color: #D1E0E0;
+    font-family: 'Raleway', sans-serif;
+    color:black;
     font-family: Helvetica, sans-serif ;
 }
+
+p{font-family: 'Raleway,', sans-serif;
+    margin-left:10px;}
+
 
 .photogrid {
     width: 905px;
     margin-left: auto;
     margin-right: auto;
-
-
+    padding-bottom:500px;
 }
 
 ul {
@@ -27,6 +26,7 @@ ul {
     display: block ;
     /*margin-left: 30% ;
     margin: right: 30% ;*/
+   
 }
 
 /*li {
@@ -72,44 +72,72 @@ img {
 
 
 #map {
-    width: 66% ;
-    height: 50% ;
-    padding: 5px ;
+    width: 905px;
+    height: 500px;
+    padding: 5px;
     border: 5px solid black ;
-    margin-left: auto ;
-    margin-right: auto ;
+    margin-left:210px ;
+    margin-right: 205px ;
+   /* clear:both;*/
+    float:none;
+    margin-top:30px;
+    margin-bottom:200px;
+    position:relative;
 }
 
 /* Google map ID */
 #map_canvas {
     /* Note: we were originally using percentages for the width and height, and that didn't work! -SRB */
-    width: 600px ;
+    width: 905px ;
     height: 500px ;
     margin: 10px ;
     padding: 0 ;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:210px;
+    margin-right:205px;
+    /*clear:both;*/
+    float:none;
+    position:relative;
+    margin-top:30px;
+    margin-bottom:200px;
 }
 
 h1 {
     font-size: 3em ;
     font-family: 'Raleway', sans-serif ;
-    margin-left:12%;
+    margin-left:210px;
+    opacity:.8;
 }
 
 h2 {
+    font-family:'Raleway', sans-serif;
     font-size: 1.2em ;
     margin: 10px ;
 }
 
+h3{font-family:'Raleway', sans-serif;
+font-size:1.5em;}
+
+h4{font-family:'Raleway', sans-serif;
+font-size:1.2em;}
+
 a:link {
-    text-decoration: none ;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color:#ffffff;
+}
+
+a:visited{
+    text-decoration:none;
 }
 
 #toggleview {
     /*height: 50px ;
     width: 50px ;*/
-    margin-left: 95px ;
+    margin-left: 210px;
+    font-family:'Raleway', sans-serif;
 }	
 
 .text-content{
@@ -126,8 +154,6 @@ line-height: 1.1em;
     font-size:1.2em;
     text-align: center;
     background-color:none;
-
-
 }
 
 .info_content img{
@@ -144,9 +170,23 @@ line-height: 1.1em;
     margin-right:0%;
     padding-right:0%;
     line-height: 1.4em;
+    text-decoration: none;
 
 }
 
+
+.nav_bar_left{ clear:both;
+    float:left;
+    list-style-type: none;
+    position:relative;
+    width:100px;
+    margin-left:0%;
+    padding-left:0%;
+    line-height: 1.4em;
+    text-decoration: none;
+    font-size:.9em;
+
+}
 /*#content{
     width:900px;
     margin-left:20px;
@@ -158,13 +198,32 @@ line-height: 1.1em;
 }*/
 
 
-/*.red{background-color:red;}*/
+
 
 
 /*Created classes for filtering by photo content (ex: by decade photo was taken) and styling*/
 
 
 
+
+#1940s{font-family:'Raleway', sans-serif;
+    text-decoration:none;}
+
+#1950s_button{font-family:'Raleway', sans-serif;
+    text-decoration:none;}
+
+
+#1960s_button{font-family:'Raleway', sans-serif;
+    text-decoration:none;}
+
+
+#1970s_button{font-family:'Raleway', sans-serif;
+    text-decoration:none;}
+
+#All_Photos_button{
+    font-family:'Raleway', sans-serif;
+    text-decoration:none;
+}
 
 
 .1950s{

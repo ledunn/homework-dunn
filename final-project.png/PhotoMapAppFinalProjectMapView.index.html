@@ -39,27 +39,42 @@
 //     });
 
 
+   
+
    $(document).ready(function(){
     $("#1950s_button").click(function(){
-        $(".1940s, .1960s, .1970s").hide(1000);
+        $(".1940s, .1950s, .1960s, .1970s").show(300);
+        $(".1940s, .1960s, .1970s").hide(800);
     }); 
 
 
 
     $("#1960s_button").click(function(){
-       $(".1940s, .1950s, .1970s").hide(1000);
+        $(".1940s, .1950s, .1960s, .1970s").show(300);
+       $(".1940s, .1950s, .1970s").hide(800);
     });
 
      $("#1970s_button").click(function(){
-       $(".1940s, .1950s, .1960s").hide(1000);
+        $(".1940s, .1950s, .1960s, .1970s").show(300);
+       $(".1940s, .1950s, .1960s").hide(800);
     });
 
-      $("#All_Photos_button").click(function(){
+      
+
+       $("#All_Photos_button").click(function(){
        $(".1940s, .1950s, .1960s, .1970s").show(1000);
     });
 
+         $("#cars_button").click(function(){
+       
+       $(".1940s, .1950s, .1960s, .1970s").hide(300);
+       $(".cars").show(800);
+    });
+
+
        $("#1940s_button").click(function(){
-       $(".1950s, .1960s, .1970s").hide(1000);
+            $(".1940s, .1950s, .1960s, .1970s").show(300);
+         $(".1950s, .1960s, .1970s").hide(800);
     });
 
 });
@@ -69,16 +84,9 @@
 
 
 
-<div id="content">  
+<!-- <div id="content">   --> 
 
-<!--Below are clickable links that allow filtering by decade with jQuery-->
-
-
-<a href="#" id="1940s_button">1940s</a>
-<a href="#" id="1950s_button">1950s</a>
-<a href="#" id="1960s_button">1960s</a>
-<a href="#" id="1970s_button">1970s</a>
-<a href="#" id="All_Photos_button">All Photos</a>   
+  
 <!---------------------------------------///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -137,7 +145,9 @@ function initialize() {
         ['3 Park St, Somerville', 42.382987,-71.106434],
         ['6 Beacon St, Somerville', 42.374459,-71.102178],
         ['8 Richdale Avenue, Somerville', 42.388798,-71.097899],
-        ['9 Hudson St, Somerville', 42.389594,-71.103307]
+        ['9 Hudson St, Somerville', 42.389594,-71.103307],
+        ['14 Austin St, Somerville',42.387664,-71.080682],
+        ['15 Mystic Avenue, Somerville', 42.387138,-71.077771]
     ];
                         
     // Info Window Content
@@ -179,9 +189,21 @@ function initialize() {
         '<p>9 Hudson St, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 9 Hudson St, Somerville, Massachusetts">' +
         "<img src='MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg'/>" +
         '</a>'+
+        '</div>'],
+
+           ['<div class="info_content 1970s">' +
+        '<h3>June 14 1978</h3>' +
+        '<p>14 Austin St, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg" class="fancybox" rel="gallery" title="June 14, 1978 <br> 14 Austin St, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg'/>" +
+        '</a>'+
+        '</div>'],
+
+        ['<div class="info_content 1960s">' +
+        '<h3>January 29 1968</h3>' +
+        '<p>15 Mystic Avenue, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" class="fancybox" rel="gallery" title="June 14, 1978 <br> 14 Austin St, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg'/>" +
+        '</a>'+
         '</div>']
-
-
 
 
     ];
@@ -310,7 +332,8 @@ function initialize() {
 
 <body>
 	<h1>
-		neighborhood.pictures
+		
+        <a href="PhotoMapAppFinalProjectMapView.index.html">neighborhood.pictures</a>
 	</h1>	
 	
 <!-- <h2>
@@ -329,12 +352,28 @@ function initialize() {
 
 
 <h2>
-    <a href="PhotoMapAppAboutPage.html">About</a>
+<div class="nav_bar_left">
+
+    <ul>
+    <li> <a href="PhotoMapAppAboutPage.html">About</a> </li>
+
+ <!--Below are clickable links that allow filtering by decade with jQuery-->
+
+
+    <li> <a href="#" id="1940s_button">1940s</a> </li>
+    <li> <a href="#" id="1950s_button">1950s</a> </li>
+    <li> <a href="#" id="1960s_button">1960s</a> </li>
+    <li> <a href="#" id="1970s_button">1970s</a> </li>
+    <li> <a href="#" id="All_Photos_button">All Photos</a> </li>
+    </ul>
+</div>
+
+
 </h2>
 
-<h2>
+<!-- <h2>
         <a href="PhotoMapAppFinalProjectPhotoIndex.html">Photo Index</a> 
-</h2>
+</h2> -->
 
 
 <div id="map_canvas" class="mapping"></div>
