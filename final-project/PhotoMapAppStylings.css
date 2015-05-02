@@ -3,7 +3,7 @@
 
 
 body {
-   /*background: url(http://griddle.it/960-12-30) repeat-y center top ;*/
+    background: url(http://griddle.it/960-12-30) repeat-y center top ;
     background-color: #ffffff;
 
 
@@ -15,7 +15,7 @@ body {
 }
 
 .photogrid {
-    width: 85%;
+    width: 905px;
     margin-left: auto;
     margin-right: auto;
 
@@ -35,8 +35,8 @@ ul {
 }*/
 
 img {
-    height: 150px ;
-    width: 180px ;
+    height: 120px ;
+    width: 155px ;
     margin: 1px ;
     float: left ;
    opacity: .8;
@@ -133,15 +133,15 @@ line-height: 1.1em;
 
 }
 
-#content{
+/*#content{
     width:900px;
-    margin-left:200px;
-    margin-right:200px;
+    margin-left:20px;
+    margin-right:20px;
     padding:5px;
     float:left;
  
 
-}
+}*/
 
 
 /*.red{background-color:red;}*/
@@ -153,8 +153,26 @@ line-height: 1.1em;
 
 
 
-.1950s:hover{
-    opacity:1;
+.1950s{
+    opacity:1; 
+    padding-top: 50px ;
+    padding-right: 70px ;
+    padding-bottom: 50px ;
+    padding-left: 70px ;
+
+    /*background-color: #555555 ;*/
+
+  /*  position: relative ;
+    z-index: 2;*/
+
+  -webkit-transition: -webkit-transform .3s ease-in ;
+    -moz-transition: -moz-transform .3s ease-in ;
+    transition: transform .3s ease-in ;*/
+
+    -webkit-transform: scale(4) ;
+    -ms-transform: scale(4) ;
+    -o-transform: scale(4) ;
+    transform: scale(4) ; 
 }
 
 .1960s:hover{
