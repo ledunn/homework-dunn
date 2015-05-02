@@ -81,10 +81,10 @@ img {
 }
 
 /* Google map ID */
-#map-canvas {
+#map_canvas {
     /* Note: we were originally using percentages for the width and height, and that didn't work! -SRB */
-    width: 900px ;
-    height: 700px ;
+    width: 600px ;
+    height: 500px ;
     margin: 10px ;
     padding: 0 ;
     margin-left:auto;
@@ -121,7 +121,17 @@ line-height: 1.1em;
 
 }
 
+.info_content{
+    font-family:'Raleway', 'sans-serif';
+    text-align: center;
+    background-color:none;
 
+}
+
+.info_content img{
+    width:300px;
+    height:200px;
+}
 .nav-bar-right{
     clear:both;
     float:right;
@@ -163,16 +173,17 @@ line-height: 1.1em;
     /*background-color: #555555 ;*/
 
   /*  position: relative ;
-    z-index: 2;*/
+    z-index: 2;
 
-  -webkit-transition: -webkit-transform .3s ease-in ;
+  /*-webkit-transition: -webkit-transform .3s ease-in ;
     -moz-transition: -moz-transform .3s ease-in ;
-    transition: transform .3s ease-in ;*/
+    transition: transform .3s ease-in ;
 
     -webkit-transform: scale(4) ;
     -ms-transform: scale(4) ;
     -o-transform: scale(4) ;
-    transform: scale(4) ; 
+    transform: scale(4) ; */
+
 }
 
 .1960s:hover{
