@@ -135,12 +135,15 @@ function initialize() {
     // Info Window Content
     var infoWindowContent = [
         ['<div class="info_content 1950s">' +
-        '<h3>3 Packard Avenue</h3>' +
-        '<p>3 Packard Avenue, Somerville, MA'+ ".</p><img src='smfa-thumb.jpg'/>" +
+        '<h3>April 24, 1956</h3>' +
+        '<p>3 Packard Avenue, Somerville, MA'+ '.</p>'+ '<a href class="fancybox">'+ 'MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg'+'>'+
+
+        "<img class=fancybox src='MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg'/>" +
+        '</a>'+
          '</div>'],
 
         ['<div class="info_content">' +
-        '<h3>3 Park St, Somerville, MA</h3>' +
+        '<h3>July 9 1968</h3>' +
         '<p>3 Park St, Somerville, MA.</p>' +
         '</div>']
     ];
@@ -156,7 +159,7 @@ function initialize() {
             position: position,
             map: map,
             title: markers[address][0],
-            icon: "map-pointer7.png"
+            icon: "imagery/blackmapicon.png"
         });
         
         // Allow each marker to have an info window    
