@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html>
+
+
+
+<head>
+	<title>
+		neighborhoood.pictures
+	</title>	
+	
+	<link rel="stylesheet" type="text/css" href="PhotoMapAppStylings.css">
+
+   
+    <!-- link to fancybox CSS file -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
+<!--import google font-------------------------------->
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>	
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	 <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP4GozpE3Mo3fRdXbsLrqNRgThj56NlLU">
+ </script>
+
+
+
+
+
+
+
+
+ <script>
+
+// $(document).ready(function(){
+//     $("#1940s_button").click(function(){
+//         $(" .1950s, .1960s, .1970s").toggle(1000);
+//     });
+
+
+   
+
+   $(document).ready(function(){
+    $("#1950s_button").click(function(){
+        $(".1940s, .1950s, .1960s, .1970s").show(300);
+        $(".1940s, .1960s, .1970s").hide(800);
+    }); 
+
+
+
+    $("#1960s_button").click(function(){
+        $(".1940s, .1950s, .1960s, .1970s").show(300);
+       $(".1940s, .1950s, .1970s").hide(800);
+    });
+
+     $("#1970s_button").click(function(){
+        $(".1940s, .1950s, .1960s, .1970s").show(300);
+       $(".1940s, .1950s, .1960s").hide(800);
+    });
+
+      
+
+       $("#All_Photos_button").click(function(){
+       $(".1940s, .1950s, .1960s, .1970s").show(1000);
+    });
+
+         $("#cars_button").click(function(){
+       
+       $(".1940s, .1950s, .1960s, .1970s").hide(300);
+       $(".cars").show(800);
+    });
+
+
+       $("#1940s_button").click(function(){
+            $(".1940s, .1950s, .1960s, .1970s").show(300);
+         $(".1950s, .1960s, .1970s").hide(800);
+    });
+
+});
+  </script>
+   
+<body>
+
+
+
+<!-- <div id="content">   --> 
+
+  
+<!---------------------------------------///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+ 
+<style type="text/css">#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}</style>
+---------->
+
+
+  
+</head>
+
+ <!-- 
+    <div id="outer-wrapper">  
+  
+
+
+     
+
+  
+      
+      <div id="map_wrapper"> -->
+    
+
+  
+ 
+  
+  <script type="text/javascript">jQuery(function($) {
+    // Asynchronously Load the map API 
+    var script = document.createElement('script');
+    script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+    document.body.appendChild(script);
+});
+
+function initialize() {
+    var map;
+    var bounds = new google.maps.LatLngBounds();
+    var mapOptions = {
+        mapTypeId: 'roadmap'
+    };
+                    
+    // Display a map on the page
+    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    map.setTilt(45);
+        
+    // Multiple Markers
+    var markers = [
+        ['3 Packard Avenue, Somerville', 42.386371, -71.097765],
+        ['3 Park St, Somerville', 42.382987,-71.106434],
+        ['6 Beacon St, Somerville', 42.374459,-71.102178],
+        ['8 Richdale Avenue, Somerville', 42.388798,-71.097899],
+        ['9 Hudson St, Somerville', 42.389594,-71.103307],
+        ['14 Austin St, Somerville',42.387664,-71.080682],
+        ['15 Mystic Avenue, Somerville', 42.387138,-71.077771]
+    ];
+                        
+    // Info Window Content
+    var infoWindowContent = [
+        ['<div class="info_content 1950s">' +
+        '<h3>April 24, 1956</h3>' +
+        '<p>3 Packard Avenue, Somerville, MA'+ '.</p>'+ '<a href="MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 3 Packard Avenue, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg'/>" +
+        '</a>'+
+         '</div>'],
+
+        ['<div class="info_content 1960s">' +
+        '<h3>July 9 1968</h3>' +
+        '<p>3 Park St, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 3 Park Street, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/3ParkStSomervilleJuly91968.jpg'/>" +
+        '</a>'+
+
+        '</div>'],
+
+
+        ['<div class="info_content 1950s">' +
+        '<h3>April 22, 1954</h3>' +
+        '<p>6 Beacon St, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 6 Beacon Street, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/6BeaconStSomervilleApril221954.jpg'/>" +
+        '</a>'+
+
+        '</div>'],
+
+        ['<div class="info_content 1960s">' +
+        '<h3>May 17, 1961</h3>' +
+        '<p>8 Richdale Avenue, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 8 Richdale Avenue, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/8RichdaleAvenueSomervilleMay171961.jpg'/>" +
+        '</a>'+
+        '</div>'],
+
+
+        ['<div class="info_content 1950s">' +
+        '<h3>Augusts 27 1956</h3>' +
+        '<p>9 Hudson St, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg" class="fancybox" rel="gallery" title="April 24, 1956 <br> 9 Hudson St, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/9HudsonStSomervilleAugust271956.jpg'/>" +
+        '</a>'+
+        '</div>'],
+
+           ['<div class="info_content 1970s">' +
+        '<h3>June 14 1978</h3>' +
+        '<p>14 Austin St, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg" class="fancybox" rel="gallery" title="June 14, 1978 <br> 14 Austin St, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/14AustinStSomervilleJune141978.jpg'/>" +
+        '</a>'+
+        '</div>'],
+
+        ['<div class="info_content 1960s">' +
+        '<h3>January 29 1968</h3>' +
+        '<p>15 Mystic Avenue, Somerville, MA.</p>' + '<a href="MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg" class="fancybox" rel="gallery" title="June 14, 1978 <br> 14 Austin St, Somerville, Massachusetts">' +
+        "<img src='MapAppPhotos/SomervilleArchivesTumblr/15MysticAvenueSomervilleJanuary291968.jpg'/>" +
+        '</a>'+
+        '</div>']
+
+
+    ];
+        
+    // Display multiple markers on a map
+    var infoWindow = new google.maps.InfoWindow(), marker, address;
+    
+    // Loop through our array of markers & place each one on the map  
+    for( address = 0; address < markers.length; address++ ) {
+        var position = new google.maps.LatLng(markers[address][1], markers[address][2], markers[address][3]);
+        bounds.extend(position);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: markers[address][0],
+            icon: "imagery/blackmapicon.png"
+        });
+        
+        // Allow each marker to have an info window    
+        google.maps.event.addListener(marker, 'click', (function(marker, address) {
+            return function() {
+                infoWindow.setContent(infoWindowContent[address][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, address));
+
+        // Automatically center the map fitting all markers on the screen
+        map.fitBounds(bounds);
+    }
+
+    // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+        this.setZoom(14);
+        google.maps.event.removeListener(boundsListener);
+    });
+    
+}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--Script for creating a customized google map below
+ <script type="text/javascript">
+        function initialize() {
+            /*
+             To initialize a map, we first create a map options object to contain initialization variables. This object is not constructed; instead it is created as an object literal ("{}"). There are two required options for every map: 'center' and 'zoom.'
+             */
+            var mapOptions = {
+                // The 'center' property takes a LatLng object.
+                // How do you get the latitude and longitude of a point?
+                // For one-off, hard-coded values: http://itouchmap.com/latlong.html
+                // --
+                // To dynamically get the lat + long coordinates of a postal address,
+                // see https://developers.google.com/maps/documentation/javascript/geocoding
+                // and https://developers.google.com/maps/documentation/geocoding/.
+                center: { lat: 42.386371, lng: -71.097765},
+                zoom: 14 //
+                // some booleans: panControl, zoomControl, scaleControl
+            };
+            // Create a new Google Map object, setting the element that will hold it
+            // and passing a list of key-value pairs to configure the map.
+            var map = new google.maps.Map(document.getElementById('map-canvas'),
+                    mapOptions);
+            // Maps can be customized through styles as well. An example:
+            // https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple
+        
+
+        // Create a new Google Map object, setting the element that will hold it
+                    // and passing a list of key-value pairs to configure the map.
+                    var map = new google.maps.Map(document.getElementById('map-canvas'),
+                            mapOptions);
+
+                    var window_content = "<h2>Info Window</h2> <p>3 Packard Avenue, Somerville, MA + Lat + Long: " + "42.402391,-71.124863" + ".</p><img src='MapAppPhotos/SomervilleArchivesTumblr/3PackardAvenueSomervilleApril241956.jpg' width='300' height='200'/>" ;
+                    
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: window_content
+                    });
+
+                    // Let's also draw a marker.
+
+                    var pinLocation= new google.maps.LatLng(42.386371, -71.097765);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: pinLocation, 
+                        icon: "map-pointer7.png"
+                    });
+
+                     // Add event listener for click event on marker.
+                    
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map,marker);
+                    });
+
+                };
+
+                   
+
+
+
+
+        // Load the map when the webpage loads.
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>-->
+
+</head>
+
+
+<body>
+	<h1>
+		
+        <a href="PhotoMapAppFinalProjectMapView.index.html">neighborhood.pictures</a>
+	</h1>	
+	
+<!-- <h2>
+		Connect With History in Your Neighborhood || See Historic Photos on a Present Day Map
+	</h2>	
+
+ -->
+<h2> 
+
+<div id="toggleview">	
+<a href="PhotoMapAppFinalProjectMapView.index.html">map view</a>| <a href ="PhotoMapAppFinalProjectPhotoGridView.index.html">photo view</a>
+</div>
+
+</h2>
+
+
+
+<h2>
+<div class="nav_bar_left">
+
+    <ul>
+    <li> <a href="PhotoMapAppAboutPage.html">About</a> </li>
+
+ <!--Below are clickable links that allow filtering by decade with jQuery-->
+
+
+    <li> <a href="#" id="1940s_button">1940s</a> </li>
+    <li> <a href="#" id="1950s_button">1950s</a> </li>
+    <li> <a href="#" id="1960s_button">1960s</a> </li>
+    <li> <a href="#" id="1970s_button">1970s</a> </li>
+    <li> <a href="#" id="All_Photos_button">All Photos</a> </li>
+    </ul>
+</div>
+
+
+</h2>
+
+<!-- <h2>
+        <a href="PhotoMapAppFinalProjectPhotoIndex.html">Photo Index</a> 
+</h2> -->
+
+
+<div id="map_canvas" class="mapping"></div>
+
+    
+
+<!--Fancy Box Light Box Gallery Plug in source files and function call below-->
+<!-- jQuery library via Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- fancybox plugin installed locally -->
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.fancybox').fancybox ({
+            'nextEffect': 'none',
+            'prevEffect': 'none'
+        });
+    });
+</script>
+
+
+
+
+
+<script type="text/javascript">
+    $(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    
+    }); 
+
+    
+</script>
+
+<!--Fancy Box Plug in Files end here-->
+
+  
+  
+ 
+ 
+</div>
+
+
+
+
+
+
+ </body>
+
+
+</html> 
